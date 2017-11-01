@@ -57,8 +57,8 @@ One-paragraph description of the course.
 
 **Prerequisites**
 
-- Prerequisite 1
-- Prerequisite 2
+None.
+This course is a prerequisite for [How to Make a DataCamp Course][how-to].
 
 ## Helpful Resources
 
@@ -68,6 +68,7 @@ One-paragraph description of the course.
 - Wilson: *[How to Teach Programming (and Other Things)][wilson-teaching]*
 
 [datacamp-how]: https://www.datacamp.com/teach/documentation
+[how-to]: https://github.com/datacamp/courses-how-to-make-an-r-course
 [huston-teaching]: https://www.amazon.com/Teaching-What-You-Dont-Know/dp/0674035801/
 [lang-teaching]: https://www.amazon.com/Small-Teaching-Everyday-Lessons-Learning/dp/1118944496/
 [wilson-teaching]: http://third-bit.com/teaching/
