@@ -1,4 +1,4 @@
-# Fundamentals of Teaching and Learning by the Content Team
+# Fundamentals of Teaching and Learning<br/>- The Content Team
 
 <!-- -------------------------------------------------------------------------------- -->
 
