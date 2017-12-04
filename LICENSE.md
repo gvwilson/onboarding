@@ -1,4 +1,5 @@
 ---
+permalink: license.html
 ---
 # License
 
