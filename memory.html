@@ -37,7 +37,21 @@
 	
 	<section>
           <h3>Overview</h3>
-	  <p>FIXME</p>
+	  <ul>
+	    <li class="fragment">
+	      A <a href="./novice.html"><em>novice</em></a> doesn't (yet) have a mental model of the problem domain
+	    </li>
+	    <li class="fragment">
+	      A <em>competent practitioner</em> can succeed at normal tasks under normal circumstances with normal effort
+	      <ul>
+		<li class="fragment">For example, bike to work or make dinner</li>
+	      </ul>
+	    </li>
+	    <li class="fragment">
+	      Look at what distinguishes an <em>expert</em>
+	      in order to see how to design lessons that work for people at all levels
+	    </li>
+	  </ul>
 	</section>
 	
 	<section>
@@ -45,43 +59,61 @@
 	  <ul>
 	    <li class="fragment">Solve common problems "instantly"</li>
 	    <li class="fragment">Able to solve unusual problems as well</li>
-	    <li class="fragment">Able to reason backward from effect to cause (diagnosis)</li>
+	    <li class="fragment">Able to reason backward from effect to cause</li>
+	  </ul>
+	  <p class="fragment">But:</p>
+	  <ul>
 	    <li class="fragment">Sometimes unable to explain their reasoning</li>
 	    <li class="fragment">Often mis-use words like "simple" or "obvious"</li>
 	  </ul>
 	</section>
 	
 	<section>
-	  <h3>A Useful Lie</h3>
+	  <h3>A Mental Model of Expertise</h3>
 	  <ul>
-	    <li class="fragment">Knowledge isn't stored as a graph, but it's a useful metaphor</li>
-	    <li class="fragment">Expert's graph isn't just larger: it's also much more densely connected</li>
+	    <li class="fragment">Knowledge isn't stored as a graph, but it's a useful model</li>
+	    <li class="fragment">Expert's graph is much more densely connected</li>
+	    <li class="fragment">So experts can reach solutions in one step instead of many
+	      <ul>
+		<li class="fragment">With much less backtracking</li>
+	      </ul>
+	    </li>
 	  </ul>
 	  <div align="center">
 	    <img class="fragment" src="img/search.svg" alt="Competent vs. Expert Search" />
 	  </div>
+	</section>
+
+	<section>
+	  <h3>You Are Not Your Learners</h3>
 	  <ul>
-	    <li class="fragment">Experts take one step where the "merely competent" have to search</li>
+	    <li class="fragment">Experts recognize solutions instead of constructing them</li>
+	    <li class="fragment">Can't explain their method because there wasn't one</li>
+	    <li class="fragment">The best teacher is someone who mastered the topic recently
+	      <ul>
+		<li class="fragment">Because they still remember what it's like to <em>not</em> understand</li>
+	      </ul>
+	    </li>
+	    <li class="fragment">Explicitly itemizing required steps helps overcome expert blind spot</li>
 	  </ul>
 	</section>
 	
 	<section>
 	  <h3>Concept Maps</h3>
 	  <ul>
-	    <li class="fragment">A picture of someone's mental model</li>
+	    <li class="fragment">A picture of a mental model</li>
 	  </ul>
-	  <p></p>
-	  <div align="center" class="fragment">
+	  <p align="center" class="fragment">
 	    <img src="img/concept.svg" alt="Concept Map" width="100%" />
-	  </div>
+	  </p>
 	  <ul>
-	    <li class="fragment">Important to emphasize the connections just as much as the concepts</li>
+	    <li class="fragment">Emphasize connections just as much as concepts</li>
 	    <li class="fragment">Knowledge that cannot be retrieved cannot be used</li>
 	  </ul>
 	</section>
 	
 	<section>
-	  <h3>How Memory Works</h3>
+	  <h3>Human Memory Hierarchy</h3>
 	  <ul>
 	    <li class="fragment">Sensory memory: 1-2 seconds</li>
 	    <li class="fragment">Short-term memory: 7±2 items for 10-15 seconds</li>
@@ -90,8 +122,12 @@
 		<li class="fragment">But frequently rewritten</li>
 	      </ul>
 	    </li>
-	    <li class="fragment">New information goes into short-term memory</li>
-	    <li class="fragment">Learning only takes place if it's transferred to long-term memory</li>
+	    <li class="fragment">Learning is the act of transferring new information to long-term memory</li>
+	    <li class="fragment">But new information initially goes into short-term memory</li>
+	    <li class="fragment">
+	      If we give learners too much too fast,
+	      it spills out of short-term memory and learning doesn't occur
+	    </li>
 	  </ul>
 	</section>
 	
@@ -99,18 +135,40 @@
 	  <h3>How Big Should a Lesson Be?</h3>
 	  <ul>
 	    <li class="fragment">
-	      If we give learners too much too fast,
-	      it spills out of short-term memory and nothing is remembered
-	    </li>
-	    <li class="fragment">
-	      So count the nodes and edges in the concept map
+	      Count the nodes and edges in the concept map
+	      <ul>
+		<li class="fragment">Or keywords in a point-form outline <em>that enumerates connections</em></li>
+	      </ul>
 	    </li>
 	    <div class="fragment" align="center" class="fragment">
 	      <img src="img/concept.svg" alt="Concept Map" width="100%" />
 	    </div>
-	    <li class="fragment">Each learning episode should be half a dozen items</li>
+	    <li class="fragment">Each learning episode should be at most half a dozen items</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Reinforcement</h3>
+	  <ul>
 	    <li class="fragment">
-	      Immediately reinforced to keep them in short-term memory long enough to be transferred
+	      Transference is more likely if new information is <em>reinforced</em>
+	      to keep it in short-term memory
+	    </li>
+	    <li class="fragment">
+	      Good: explain it again in a different way
+	    </li>
+	    <li class="fragment">
+	      Better: have learners use it
+	      <ul>
+		<li class="fragment">Which also checks that they understood it the first time</li>
+	      </ul>
+	    </li>
+	    <li class="fragment">
+	      Music and athletics:
+	      instructor and learner alternate every 30-60 seconds
+	    </li>
+	    <li class="fragment">
+	      Try to achieve this with code
 	    </li>
 	  </ul>
 	</section>
@@ -121,15 +179,14 @@
 	    <li class="fragment">
 	      Different parts of problem solving compete for processing time
 	      <ul>
-		<li class="fragment">Recall</li>
-		<li class="fragment">Planning</li>
+		<li class="fragment">Recall vs. planning</li>
 	      </ul>
 	    </li>
 	    <li class="fragment">Good lessons let learners concentrate on one aspect of a problem at a time</li>
 	    <li class="fragment">Example: Parsons Problems
 	      <ul>
 		<li class="fragment">Rearrange jumbled lines of code to solve a problem</li>
-		<li class="fragment">Allows learner to concentrate on data flow</li>
+		<li class="fragment">Allows learner to concentrate on data flow instead of vocabulary</li>
 	      </ul>
 	    </li>
 	  </ul>
@@ -139,18 +196,21 @@
 	  <h3>Faded Examples</h3>
 	  <ul>
 	    <li class="fragment">A succession of closely-related problems</li>
-	    <li class="fragment">Each gives the learner less scaffolding
+	    <li class="fragment">Each gives the learner less <em>scaffolding</em></li>
+	    <li class="fragment">Parts that are removed are closely related</li>
+	    <li class="fragment">Learners focus on one aspect of the problem at a time
 	      <ul>
-		<li class="fragment">Parts that are removed are closely related</li>
+		<li class="fragment">And learn the underlying pattern by example</li>
 	      </ul>
 	    </li>
-	    <li class="fragment">Learners can focus on one aspect of the problem at a time</li>
-	    <li class="fragment">And learn the underlying pattern by example</li>
 	  </ul>
 	</section>
 	
 	<section>
-	  <h3>Fully Worked Example</h3>
+	  <h3>Step 1: Fully-Worked Example</h3>
+          <ul>
+	    <li>Go through this line by line</li>
+	  </ul>
 <pre class="sample">
 # ["red", "green", "blue"] => 12
 def total_length(words):
@@ -159,13 +219,13 @@ def total_length(words):
         total += len(word)
     return total
 </pre>
-          <ul>
-	    <li>Go through this line by line</li>
-	  </ul>
 	</section>
 
 	<section>
 	  <h3>First Exercise</h3>
+          <ul>
+	    <li>Direct attention to initialization and update</li>
+	  </ul>
 <pre class="sample">
 # ["red", "green", "blue"] => [3, 5, 4]
 def all_lengths(words):
@@ -174,13 +234,13 @@ def all_lengths(words):
         lengths ____
     return lengths
 </pre>
-          <ul>
-	    <li>Directs attention to initialization and update</li>
-	  </ul>
 	</section>
 
 	<section>
 	  <h3>Second Exercise</h3>
+          <ul>
+	    <li>Direct attention to control flow</li>
+	  </ul>
 <pre class="sample">
 # ["red", "green", "blue"] => "redgreenblue"
 def join(words):
@@ -189,13 +249,13 @@ def join(words):
         ____
     return result
 </pre>
-          <ul>
-	    <li>Directs attention to control flow</li>
-	  </ul>
 	</section>
 
 	<section>
 	  <h3>Final Exercise</h3>
+          <ul>
+	    <li>Put the pieces together</li>
+	  </ul>
 <pre class="sample">
 # ["red", "green", "blue"] => "RGB"
 def acronym(words):
@@ -205,8 +265,8 @@ def acronym(words):
     ____
 </pre>
           <ul>
-	    <li>By now the pattern has been internalized</li>
-	    <li class="fragment">And learners have done <em>more</em> work in <em>less</em> time</li>
+	    <li class="fragment">Learners do <em>more</em> total work…</li>
+	    <li class="fragment">…in <em>less</em> total time</li>
 	  </ul>
 	</section>
 
@@ -214,7 +274,7 @@ def acronym(words):
 	  <h3>Chunking</h3>
 	  <ul>
 	    <li class="fragment">
-	      Items that frequently occur together are stored in chunks
+	      Items that frequently occur together are stored in <em>chunks</em>
 	      that only take up one slot in short-term memory
 	      <ul>
 		<li class="fragment">The digits in frequently-used phone numbers</li>
@@ -232,13 +292,20 @@ def acronym(words):
 		<li class="fragment">"Best value seen so far"</li>
 	      </ul>
 	    </li>
-	    <li class="fragment">Good libraries turn chunks into components</li>
 	  </ul>
 	</section>
 
 	<section>
 	  <h3>What We Just Did</h3>
-	  <p>FIXME</p>
+	  <ol>
+	    <li class="fragment">Extended your mental model of cognition</li>
+	    <li class="fragment">Introduced some jargon without forward referenes
+	      <ul>
+		<li class="fragment">Because each forward reference uses up a slot in short-term memory</li>
+	      </ul>
+	    </li>
+	    <li class="fragment">Gave you concrete guidelines for sizing and sequencing exercises</li>
+	  </ol>
 	</section>
       </div>
     </div>
