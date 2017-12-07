@@ -150,11 +150,11 @@ def zeroTriangle(matrix):
 </section>
 
 <section>
-  <h3>Writing Tests</h3>
+  <h3>Finding Bugs</h3>
   <ul>
-    <li class="fragment">Novices will spend most of their time debugging
+    <li class="fragment">Novices will spend most of their time doing this
       <ul>
-	<li class="fragment">We're all novices, really…</li>
+	<li class="fragment">Just like the rest of us</li>
       </ul>
     </li>
     <li class="fragment">Give students a chance to practice another real-world skill</li>
@@ -169,10 +169,10 @@ def zeroTriangle(matrix):
 <section>
   <h3>Writing Tests (Example)</h3>
   <p align="left">
-    <code>monotonic_sum</code> calculates the sum of each
-    section of a list of numbers in which the values are monotonically
-    increasing. For example, given the input <code>[1, 3, 3, 4, 5, 1]</code>, the
-    output should be <code>[4, 3, 9, 1]</code>. Which of these bugs does it contain?
+    <code>monotonic_sum</code> calculates the sum of each section of a
+    list of numbers in which the values are strictly increasing: given
+    the input <code>[1, 3, 3, 4, 5, 1]</code>, the output should
+    be <code>[4, 3, 9, 1]</code>. Which of these bugs does it contain?
   </p>
   <ol>
     <li>Every negative number starts a new sub-sequence.</li>
@@ -185,13 +185,9 @@ def zeroTriangle(matrix):
 <section>
   <h3>Tracing Execution</h3>
   <ul>
-    <li class="fragment">Given code, trace order in which lines are executed
-      <ul>
-	<li class="fragment">Inverse of a Parsons Problem</li>
-      </ul>
-    </li>
+    <li class="fragment">Given code, trace order in which lines are executed</li>
     <li class="fragment">Authentic task (comes up frequently in debugging)</li>
-    <li class="fragment">Not supported, but can be emulated with MCQ</li>
+    <li class="fragment">Not supported directly, but can be emulated with MCQ</li>
   </ul>
 </section>
 
