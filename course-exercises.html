@@ -1,0 +1,236 @@
+---
+layout: slides
+title: Crafting Course Exercises
+---
+	
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li class="fragment">
+      Now understand need for <a href="./novice.html">diagnostic power</a>
+      and <a href="./memory.html">basic constraints on memory and cognition</a>
+    </li>
+    <li class="fragment">See how different kinds of exercises achieve that</li>
+    <li class="fragment">And some of the capabilities of our platform</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Requirements</h3>
+  <ol>
+    <li class="fragment">Exercises must be quick to do (1-2 minutes)
+      <ul>
+	<li class="fragment">People learn best in small steps</li>
+	<li class="fragment">People drop out if exercises are longer</li>
+      </ul>
+    </li>
+    <li class="fragment">Answers must be automatically gradable
+      <ul>
+	<li class="fragment">Human inspection doesn't scale affordably</li>
+	<li class="fragment">Instant feedback is more engaging</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h3>Multiple Choice Question</h3>
+  <ul>
+    <li class="fragment">Short, unambiguous question</li>
+    <li class="fragment">3-5 responses
+      <ul>
+	<li class="fragment">Remember 7±2</li>
+      </ul>
+    </li>
+    <li class="fragment">Exericse reasoning and judgment, not just recall</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Multiple Choice Question (Example)</h3>
+  <p>What does the following fragment of Python print?</p>
+  <pre>
+    letters = 'abc'
+    for char in letters:
+    print(char)
+    letters.upper()
+  </pre>
+  <ol class="fragment">
+    <li><code>A B C</code></li>
+    <li><code>a B C</code></li>
+    <li><code>a b c</code></li>
+    <li><code>error</code></li>
+  </ol>
+  <ul>
+    <li class="fragment">Remember: wrong answers should be chosen to diagnose misconceptions</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Write and Run</h3>
+  <ul>
+    <li class="fragment">Write code that does X</li>
+  </ul>
+  <p class="fragment" align="left">
+    The matrix <code>M</code> contains data read from a
+    file. Using one function or method call, create a
+    matrix <code>Z</code> that has the same shape
+    as <code>M</code> but contains only zeroes.
+  </p>
+  <ul>
+  </ul>
+</section>
+
+<section>
+  <h3>Write and Run (Improved)</h3>
+  <ul>
+    <li class="fragment">Blank screens can be intimidating</li>
+    <li class="fragment">So have learners fill in the blanks so that the code does X</li>
+    <li class="fragment">Easier to auto-grade answers if you provide a starting point</li>
+  </ul>
+  <div class="fragment">
+    <p align="left">
+      Fill in the blanks so that the code below prints the string <code>'hat'</code>.
+    </p>
+<pre>
+text = 'all that it is'
+slice = text[____:____]
+print(slice)
+</pre>
+  </div>
+</section>
+
+<section>
+  <h3>Minimal Changes</h3>
+  <ul>
+    <li class="fragment">Modify code instead of filling in blanks</li>
+    <li class="fragment">Change the output</li>
+    <li class="fragment">Or fix the bug</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Minimal Changes (Example)</h3>
+  <p align="left">
+    This function is supposed to test whether a point <code>(x, y)</code> lies
+    strictly within a rectangle defined by <code>(x_min, y_min, x_max, y_max)</code>.
+    Change one line to make it do so correctly.
+  </p>
+<pre>
+def inside(point, rect):
+  if (point.x <= rect.x_min): return false
+  if (point.y <= rect.y_min): return false
+  if (point.x >= rect.y_max): return false
+  if (point.y >= rect.y_max): return false
+  return true
+</pre>
+</section>
+
+<section>
+  <h3>Minimal Changes (Continued)</h3>
+  <ul>
+    <li class="fragment">Change one variable's initial value</li>
+    <li class="fragment">Swap an inner and outer loop</li>
+    <li class="fragment">Change the order of tests in a chain of conditionals</li>
+    <li class="fragment">Change the nesting of function calls</li>
+  </ul>
+  <div class="fragment">
+    <p>
+      Change the inner loop control in the function below so
+      that it sets the upper left triangle of the matrix to
+      zero.
+    </p>
+<pre>
+def zeroTriangle(matrix):
+    for c in range(matrix.cols):
+        for r in range(matrix.rows):
+            matrix[r, c] = 0
+</pre>
+  </div>
+</section>
+
+<section>
+  <h3>Writing Tests</h3>
+  <ul>
+    <li class="fragment">Novices will spend most of their time debugging
+      <ul>
+	<li class="fragment">We're all novices, really…</li>
+      </ul>
+    </li>
+    <li class="fragment">Give students a chance to practice another real-world skill</li>
+    <li class="fragment">Exercise higher-level thinking
+      <ul>
+	<li class="fragment">Reason from effect back to cause</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Writing Tests (Example)</h3>
+  <p align="left">
+    <code>monotonic_sum</code> calculates the sum of each
+    section of a list of numbers in which the values are monotonically
+    increasing. For example, given the input <code>[1, 3, 3, 4, 5, 1]</code>, the
+    output should be <code>[4, 3, 9, 1]</code>. Which of these bugs does it contain?
+  </p>
+  <ol>
+    <li>Every negative number starts a new sub-sequence.</li>
+    <li>First value of each sub-sequence not in sub-sum.</li>
+    <li>Last value of each sub-sequence not in sub-sum.</li>
+    <li>Only re-starts sum when values actually decrease.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>Tracing Execution</h3>
+  <ul>
+    <li class="fragment">Given code, trace order in which lines are executed
+      <ul>
+	<li class="fragment">Inverse of a Parsons Problem</li>
+      </ul>
+    </li>
+    <li class="fragment">Authentic task (comes up frequently in debugging)</li>
+    <li class="fragment">Not supported, but can be emulated with MCQ</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Tracing Execution (Example)</h3>
+  <p align="left">
+    In what order do the lines in this code execute?
+  </p>
+<pre>
+A)     vals = [-1, 0, 1]
+B)     inverse_sum = 0
+       try:
+            for v in vals:
+C)             inverse_sum += 1/v
+       except:
+D)         pass
+</pre>
+<ol>
+  <li>A, B, C, C, C</li>
+  <li>A, B, C, C, D</li>
+  <li>A, B, C, C, D, C</li>
+</ol>
+  <p></p>
+  <ul>
+    <li class="fragment">Can also trace successive values</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Further Reading</h3>
+  <p><img src="img/discussion-book.jpg" width="25%" /></p>
+  <p><a href="https://www.amazon.com/Discussion-Book-Great-People-Talking/dp/1119049717/"><em>The Discussion Book</em></a></p>
+</section>
+
+<section>
+  <h3>What We Just Did</h3>
+  <ol>
+    <li class="fragment">Introduced several kinds of exercises</li>
+    <li class="fragment">Showed how simple tools could be repurposed in several ways</li>
+    <li class="fragment">Reinforced the need to exercise higher-level thinking skills</li>
+  </ol>
+</section>

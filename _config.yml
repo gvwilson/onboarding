@@ -2,6 +2,8 @@
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 repository: <USERNAME>/<PROJECT>
 
+version: "0.1"
+
 highlighter: rouge
 markdown: kramdown
 plugins:

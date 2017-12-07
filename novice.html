@@ -1,315 +1,265 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Teaching and Learning: From Novice to Competent</title>
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/simple.css">
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-    <style>
-      .reveal section img {
-        border: 0px;
-      }
-    </style>
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
+---
+layout: slides
+title: From Novice to Competent
+---
+	
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li class="fragment">
+      We know as much about
+      <a href="https://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101/">how learning works</a>
+      as we do about public health
+    </li>
+    <li class="fragment">But most people in higher education don't know this knowledge exists</li>
+    <li class="fragment">A few key ideas can make lessons significantly more effective</li>
+  </ul>
+  <p></p>
+  <div align="center" class="fragment">
+    Having crammed a dozen books into <a href="http://third-bit.com/teaching/">a two-day course</a>,
+    we will now cram that course into one hour
+  </div>
+</section>
 
-	<section>
-          <div align="center">
-            <h2>Teaching and Learning:<br/>From Novice to Competent</h2>
-            <p><a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="30%" /></a></p>
-            <p>Version 0.1</p>
-            <p><img src="img/cc-by-license.png" alt="CC-BY" width="200"/></p>
-          </div>
-	</section>
-	
-	<section>
-          <h3>Overview</h3>
-          <ul>
-	    <li class="fragment">
-	      We know as much about
-	      <a href="https://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101/">how learning works</a>
-	      as we do about public health
-	    </li>
-	    <li class="fragment">But most people in higher education don't know this knowledge exists</li>
-	    <li class="fragment">A few key ideas can make lessons significantly more effective</li>
-	  </ul>
-	  <p></p>
-	  <div align="center" class="fragment">
-	    Having crammed a dozen books into <a href="http://third-bit.com/teaching/">a two-day course</a>,
-	    we will now cram that course into one hour
-          </div>
-	</section>
-	
-	<section>
-	  <h3>Cognitive Transitions</h3>
-	  <ul>
-	    <li class="fragment">
-	      <a href="https://www.amazon.com/Novice-Expert-Excellence-Clinical-Commemorative/dp/0130325228/">Benner</a>
-	      and others studied how nurses become more proficient
-	      <ul>
-		<li class="fragment">Work replicated in many other domains</li>
-	      </ul>
-	    </li>
-	    <li class="fragment">A (fairly) predictable series of cognitive transitions
-	      <ul>
-		<li class="fragment">People don't just know more</li>
-		<li class="fragment">They think differently</li>
-	      </ul>
-	    </li>
-	    <li class="fragment">
-	      We will simplify to <em>novice,</em>
-	      <em class="fragment">competent,</em>
-	      <span class="fragment">and <em>expert</em></span>
-	    </li>
-	  </ul>
-	</section>
-	
-	<section>
-	  <h3>Characteristics of Novices</h3>
-	  <ul>
-	    <li class="fragment">Ask questions that don't make sense</li>
-	    <li class="fragment">Do things by rote
-	      <ul>
-		<li class="fragment">No real understanding cause and effect</li>
-	      </ul>
-	    </li>
-	    <li class="fragment">Use analogies with other domains
-	      <ul>
-		<li class="fragment">Which are often misleading or inconsistent</li>
-	      </ul>
-	    </li>
-	    <li class="fragment">Use incorrect language or use language incorrectly</li>
-	    <li class="fragment">Often over-confident
-	      <ul>
-		<li class="fragment"><a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Kruger Effect</a></li>
-	      </ul>
-	    </li>
-	  </ul>
-	</section>
-	
-	<section>
-	  <h3>Root Cause</h3>
-	  <ul>
-	    <li class="fragment">Novices don't yet have a <em>mental model</em> of the domain</li>
-	  </ul>
-	  <div class="fragment" align="center">
-	    <img src="img/world-map.jpg" width="40%" alt="World Map (sketch)" credit="https://mamasmiles.com/media/2009/WorldMap/WorldMapTemplate.jpg" />
-	    <p class="fragment"><a href="http://worldmapswithout.nz/">Sorry, New Zealand</a></p>
-	  </div>
-	</section>
+<section>
+  <h3>Cognitive Transitions</h3>
+  <ul>
+    <li class="fragment">
+      <a href="https://www.amazon.com/Novice-Expert-Excellence-Clinical-Commemorative/dp/0130325228/">Benner</a>
+      and others studied how nurses become more proficient
+      <ul>
+	<li class="fragment">Work replicated in many other domains</li>
+      </ul>
+    </li>
+    <li class="fragment">A (fairly) predictable series of cognitive transitions
+      <ul>
+	<li class="fragment">People don't just know more</li>
+	<li class="fragment">They think differently</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      We will simplify to <em>novice,</em>
+      <em class="fragment">competent,</em>
+      <span class="fragment">and <em>expert</em></span>
+    </li>
+  </ul>
+</section>
 
-	<section>
-	  <h3>Mental Models</h3>
-	  <ul>
-	    <li class="fragment">"Atoms are colored balls connected by springs"</li>
-	    <li class="fragment">"Atoms are little solar systems with electrons orbiting a nucleus"</li>
-	    <li class="fragment">"A computer has a CPU, memory, and a hard drive"</li>
-	    <li class="fragment">Not just an inextensible collection of facts
-	      <ul>
-		<li class="fragment">Mental models support <em>explanatory extension</em></li>
-	      </ul>
-	    </li>
-	    <li class="fragment">Not necessarily a subset of "the truth"
-	      <ul>
-		<li class="fragment">But eventually explainable in its terms</li>
-	      </ul>
-	    </li>
-	  </ul>
-	</section>
-	
-	<section>
-	  <h3>How to Help Novices</h3>
-	  <ul>
-	    <li class="fragment">Your goal when teaching novices is <em>not</em> to give them lots of information
-	      <ul>
-		<li class="fragment">Because they don't yet have somewhere to put it</li>
-	      </ul>
-	    </li>
-	    <li class="fragment">Your goal is to help them build a usable mental model</li>
-	  </ul>
-	</section>
-	
-	<section>
-	  <h3>Example</h3>
-	  <ul>
-	    <li class="fragment">
-	      DataCamp's <a href="https://www.datacamp.com/courses/introduction-to-shell-for-data-science">introduction to the Unix shell</a>
-	      only teaches 15 commands in 3 hours
-	    </li>
-	    <li class="fragment">
-	      But it also teaches paths, redirection, command-line arguments, history, pipes, filename patterns, and loops
-	    </li>
-	    <li class="fragment">Without a mental model that includes those concepts, the commands don't make sense</li>
-	  </ul>
-	</section>
+<section>
+  <h3>Characteristics of Novices</h3>
+  <ul>
+    <li class="fragment">Ask questions that don't make sense</li>
+    <li class="fragment">Do things by rote
+      <ul>
+	<li class="fragment">No real understanding cause and effect</li>
+      </ul>
+    </li>
+    <li class="fragment">Use analogies with other domains
+      <ul>
+	<li class="fragment">Which are often misleading or inconsistent</li>
+      </ul>
+    </li>
+    <li class="fragment">Use incorrect language or use language incorrectly</li>
+    <li class="fragment">Often over-confident
+      <ul>
+	<li class="fragment"><a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Kruger Effect</a></li>
+      </ul>
+    </li>
+  </ul>
+</section>
 
-	<section>
-	  <h3>You're Done When</h3>
-	  <ul>
-	    <li class="fragment">Learners ask sensible questions</li>
-	    <li class="fragment">That use jargon, and use it correctly
-	      <ul>
-		<li class="fragment">Know what terms to search for</li>
-		<li class="fragment">Can recognize a useful answer when they see it</li>
-	      </ul>
-	    </li>
-	    <li class="fragment">They can extrapolate
-	      <ul>
-		<li class="fragment">"There must be an option for that…"</li>
-	      </ul>
-	    </li>
-	    <li class="fragment">They can reason backward
-	      <ul>
-		<li class="fragment">"Y has gone wrong, so I probably need to fix X"</li>
-	      </ul>
-	    </li>
-	  </ul>
-	</section>
-	
-	<section>
-	  <h3>How to Help Novices</h3>
-	  <ul>
-	    <li class="fragment">
-	      The key to helping novices build mental models is to
-	      <em>diagnose and correct misconceptions</em>
-	    </li>
-	  </ul>
-	  <table class="fragment">
-	    <tr>
-	      <td colspan="3" align="center">What is 37 + 15?</td>
-	    </tr>
-	    <tr>
-	      <td>a)</td>
-	      <td align="right">52</td>
-	      <td class="fragment">Correct</td>
-	    </tr>
-	    <tr>
-	      <td>b)</td>
-	      <td align="right">42</td>
-	      <td class="fragment">Threw away the '1'</td>
-	    </tr>
-	    <tr>
-	      <td>c)</td>
-	      <td align="right">412</td>
-	      <td class="fragment">Treated each column independently</td>
-	    </tr>
-	    <tr>
-	      <td>d)</td>
-	      <td align="right">43</td>
-	      <td class="fragment">Carried into the same column</td>
-	    </tr>
-	  </table>
-	  <ul>
-	    <li class="fragment">Each misconception needs a different correction</li>
-	  </ul>
-	</section>
+<section>
+  <h3>Root Cause</h3>
+  <ul>
+    <li class="fragment">Novices don't yet have a <em>mental model</em> of the domain</li>
+  </ul>
+  <div class="fragment" align="center">
+    <img src="img/world-map.jpg" width="40%" alt="World Map (sketch)" credit="https://mamasmiles.com/media/2009/WorldMap/WorldMapTemplate.jpg" />
+    <p class="fragment"><a href="http://worldmapswithout.nz/">Sorry, New Zealand</a></p>
+  </div>
+</section>
 
-	<section>
-	  <h3>Assessment</h3>
-	  <ul>
-	    <li class="fragment">
-	      <em>Formative assessment</em> used during the lesson to shape learning as it takes happens
-	      <ul>
-		<li class="fragment">Does the learner understand?</li>
-		<li class="fragment">If not, <em>why not?</em></li>
-	      </ul>
-	    </li>
-	    <li class="fragment">
-	      Also lets learners practice skills they will need in the <em>summative assessment</em> (final exam)
-	    </li>
-	    <li class="fragment">
-	      Good formative assessments are:
-	      <ul>
-		<li class="fragment">Quick (so that they don't derail lesson flow)</li>
-		<li class="fragment">Unambiguous (so that they scale)</li>
-		<li class="fragment">Constructive (i.e., exercise more than just recall)</li>
-	      </ul>
-	    </li>
-	  </ul>
-	</section>
-	
-	<section>
-	  <h3>Models of Models</h3>
-	  <ul>
-	    <li class="fragment">
-	      You have to understand your learners' mental models
-	      in order to create diagnostic formative assessments
-	    </li>
-	    <li class="fragment">
-	      If you do,
-	      you will automatically create lessons that forestall and correct misconceptions
-	    </li>
-	    <li class="fragment">
-	      You should be able to explain what misconception(s) each expected wrong answer is checking for
-	    </li>
-	  </ul>
-	</section>
+<section>
+  <h3>Mental Models</h3>
+  <ul>
+    <li class="fragment">"Atoms are colored balls connected by springs"</li>
+    <li class="fragment">"Atoms are little solar systems with electrons orbiting a nucleus"</li>
+    <li class="fragment">"A computer has a CPU, memory, and a hard drive"</li>
+    <li class="fragment">Not just an inextensible collection of facts
+      <ul>
+	<li class="fragment">Mental models support <em>explanatory extension</em></li>
+      </ul>
+    </li>
+    <li class="fragment">Not necessarily a subset of "the truth"
+      <ul>
+	<li class="fragment">But eventually explainable in its terms</li>
+      </ul>
+    </li>
+  </ul>
+</section>
 
-	<section>
-	  <h3>What We Don't Have (Yet)</h3>
-	  <ul>
-	    <li class="fragment">
-	      All teaching requires domain knowledge, general teaching knowledge,
-	      and <em>pedagogical content knowledge</em> (PCK)
-	    </li>
-	  </ul>
-	  <div class="fragment" align="center">
-	    <a href="https://www.amazon.com/Teaching-Statistics-Tricks-Andrew-Gelman/dp/0198785704/"><img src="img/statistics.jpg" width="150px" /></a>
-	    <a href="https://www.amazon.com/Common-Misconceptions-Mathematics-Strategies-Correct/dp/0761858857/"><img src="img/ojose.jpg" width="150px" /></a>
-	  </div>
-	  <ul>
-	    <li class="fragment">
-	      We don't have catalogs like these of how people misunderstand programming concepts
-	      <span class="fragment">– yet</span>
-	    </li>
-	  </ul>
-	</section>
+<section>
+  <h3>How to Help Novices</h3>
+  <ul>
+    <li class="fragment">Your goal when teaching novices is <em>not</em> to give them lots of information
+      <ul>
+	<li class="fragment">Because they don't yet have somewhere to put it</li>
+      </ul>
+    </li>
+    <li class="fragment">Your goal is to help them build a usable mental model</li>
+  </ul>
+</section>
 
-	<section>
-	  <h3>Further Reading</h3>
-	  <p><img src="img/lang.jpg" width="25%" /></p>
-	  <p><a href="https://www.amazon.com/Small-Teaching-Everyday-Lessons-Learning/dp/1118944496/"><em>Small Teaching</em></a>
-	</section>
-	
-	<section>
-	  <h3>What We Just Did</h3>
-	  <ol>
-	    <li class="fragment">Started building your mental model of learning</li>
-	    <li class="fragment">Corrected some misconceptions you might have had about what lessons are for</li>
-	    <li class="fragment">Gave you something concrete to do</li>
-	  </ol>
-	  <div align="center" class="fragment">
-	    <p>Next: <a href="./memory.html">Memory and Cognition</a></p>
-	  </div>
-	</section>
+<section>
+  <h3>Example</h3>
+  <ul>
+    <li class="fragment">
+      DataCamp's <a href="https://www.datacamp.com/courses/introduction-to-shell-for-data-science">introduction to the Unix shell</a>
+      only teaches 15 commands in 3 hours
+    </li>
+    <li class="fragment">
+      But it also teaches paths, redirection, command-line arguments, history, pipes, filename patterns, and loops
+    </li>
+    <li class="fragment">Without a mental model that includes those concepts, the commands don't make sense</li>
+  </ul>
+</section>
 
-      </div>
-    </div>
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
-    <script>
-      Reveal.initialize({
-        history: true,
-        center: false,
-        slideNumber: true,
-        dependencies: [
-          { src: 'plugin/markdown/marked.js' },
-          { src: 'plugin/markdown/markdown.js' },
-          { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-        ]
-      });
-    </script>
-  </body>
-</html>
+<section>
+  <h3>You're Done When</h3>
+  <ul>
+    <li class="fragment">Learners ask sensible questions</li>
+    <li class="fragment">That use jargon, and use it correctly
+      <ul>
+	<li class="fragment">Know what terms to search for</li>
+	<li class="fragment">Can recognize a useful answer when they see it</li>
+      </ul>
+    </li>
+    <li class="fragment">They can extrapolate
+      <ul>
+	<li class="fragment">"There must be an option for that…"</li>
+      </ul>
+    </li>
+    <li class="fragment">They can reason backward
+      <ul>
+	<li class="fragment">"Y has gone wrong, so I probably need to fix X"</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>How to Help Novices</h3>
+  <ul>
+    <li class="fragment">
+      The key to helping novices build mental models is to
+      <em>diagnose and correct misconceptions</em>
+    </li>
+  </ul>
+  <table class="fragment">
+    <tr>
+      <td colspan="3" align="center">What is 37 + 15?</td>
+    </tr>
+    <tr>
+      <td>a)</td>
+      <td align="right">52</td>
+      <td class="fragment">Correct</td>
+    </tr>
+    <tr>
+      <td>b)</td>
+      <td align="right">42</td>
+      <td class="fragment">Threw away the '1'</td>
+    </tr>
+    <tr>
+      <td>c)</td>
+      <td align="right">412</td>
+      <td class="fragment">Treated each column independently</td>
+    </tr>
+    <tr>
+      <td>d)</td>
+      <td align="right">43</td>
+      <td class="fragment">Carried into the same column</td>
+    </tr>
+  </table>
+  <ul>
+    <li class="fragment">Each misconception needs a different correction</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Assessment</h3>
+  <ul>
+    <li class="fragment">
+      <em>Formative assessment</em> used during the lesson to shape learning as it takes happens
+      <ul>
+	<li class="fragment">Does the learner understand?</li>
+	<li class="fragment">If not, <em>why not?</em></li>
+      </ul>
+    </li>
+    <li class="fragment">
+      Also lets learners practice skills they will need in the <em>summative assessment</em> (final exam)
+    </li>
+    <li class="fragment">
+      Good formative assessments are:
+      <ul>
+	<li class="fragment">Quick (so that they don't derail lesson flow)</li>
+	<li class="fragment">Unambiguous (so that they scale)</li>
+	<li class="fragment">Constructive (i.e., exercise more than just recall)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Models of Models</h3>
+  <ul>
+    <li class="fragment">
+      You have to understand your learners' mental models
+      in order to create diagnostic formative assessments
+    </li>
+    <li class="fragment">
+      If you do,
+      you will automatically create lessons that forestall and correct misconceptions
+    </li>
+    <li class="fragment">
+      You should be able to explain what misconception(s) each expected wrong answer is checking for
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>What We Don't Have (Yet)</h3>
+  <ul>
+    <li class="fragment">
+      All teaching requires domain knowledge, general teaching knowledge,
+      and <em>pedagogical content knowledge</em> (PCK)
+    </li>
+  </ul>
+  <div class="fragment" align="center">
+    <a href="https://www.amazon.com/Teaching-Statistics-Tricks-Andrew-Gelman/dp/0198785704/"><img src="img/statistics.jpg" width="150px" /></a>
+    <a href="https://www.amazon.com/Common-Misconceptions-Mathematics-Strategies-Correct/dp/0761858857/"><img src="img/ojose.jpg" width="150px" /></a>
+  </div>
+  <ul>
+    <li class="fragment">
+      We don't have catalogs like these of how people misunderstand programming concepts
+      <span class="fragment">– yet</span>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Further Reading</h3>
+  <p><img src="img/lang.jpg" width="25%" /></p>
+  <p><a href="https://www.amazon.com/Small-Teaching-Everyday-Lessons-Learning/dp/1118944496/"><em>Small Teaching</em></a>
+</section>
+
+<section>
+  <h3>What We Just Did</h3>
+  <ol>
+    <li class="fragment">Started building your mental model of learning</li>
+    <li class="fragment">Corrected some misconceptions you might have had about what lessons are for</li>
+    <li class="fragment">Gave you something concrete to do</li>
+  </ol>
+  <div align="center" class="fragment">
+    <p>Next: <a href="./memory.html">Memory and Cognition</a></p>
+  </div>
+</section>
