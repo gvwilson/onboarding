@@ -9,7 +9,8 @@
 
 ----
 
--   [Building a Course](./course.html)
+-   [Designing a Course](./course-design.html)
+-   [Building a Course](./course-build.html)
 -   [Creating a Project](./project.html)
 
 ----
