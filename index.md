@@ -4,8 +4,13 @@
 
 -   [From Novice to Competent](./novice.html)
 -   [Memory and Cognition](./memory.html)
--   [Crafting Exercises](./exercises.html)
 -   [Motivation](./motivation.html)
+-   [Crafting Exercises](./exercises.html)
+
+----
+
+-   [Building a Course](./course.html)
+-   [Creating a Project](./project.html)
 
 ----
 
