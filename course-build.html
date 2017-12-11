@@ -5,12 +5,411 @@ title: Building a Course
 	
 <section>
   <h3>Overview</h3>
-  <p>FIXME</p>
+  <ul>
+    <li class="fragment">
+      Have seen how to <a href="./course-design.html">design a course</a>
+      and what kinds of <a href="./course-exercises.html">exercises</a> are available</li>
+    <li class="fragment">Now walk through building a course</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Courses in Action</h3>
+  <ul>
+    <li class="fragment">We use Docker to provide a fresh Linux virtual machine for each exercise</li>
+    <li class="fragment">Basic image provided per technology
+      <ul>
+	<li class="fragment">You can install packages, add datasets, etc.</li>
+      </ul>
+    </li>
+    <li class="fragment">Each coding exercise has a sample solution and some submission correctness tests (SCTs)
+      <ul>
+	<li class="fragment">We test courses by running sample solutions through SCTs</li>
+	<li class="fragment">We test students' answers by running <em>their</em> solutions through the same SCTs</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Creating the Course</h3>
+  <ol>
+    <li class="fragment">Log in to DataCamp</li>
+    <li class="fragment">Go to <a href="http://datacamp.com/teach">http://datacamp.com/teach/</a></li>
+    <li class="fragment">Click "Add Course +" button</li>
+    <li class="fragment">Fill in course name and choose technology
+      <ul>
+	<li class="fragment">R, Python, SQL, or Shell (catch-all)</li>
+      </ul>
+    </li>
+    <li class="fragment">Course now appears in dashboard
+      <ul>
+	<li class="fragment">GitHub repository created and populated with starter files</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h3>Lifecycle</h3>
+  <ul>
+    <li class="fragment">Add/edit chapters, slides, videos, and datasets
+      <ul>
+	<li class="fragment">Desktop + GitHub</li>
+	<li class="fragment">Our editor (which provides preview)</li>
+      </ul>
+    </li>
+    <li class="fragment">Our system repeatedly <em>builds</em> the course
+      <ul>
+	<li class="fragment">Check syntax</li>
+	<li class="fragment">Run sample solutions through correctness tests</li>
+	<li class="fragment">By default, only checks chapters that have changed</li>
+      </ul>
+    </li>
+    <li class="fragment">Use multiple branches in one repository instead of forking repositories</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Repository Structure</h3>
+  <table style="font-size:80%">
+    <tr>
+      <td><code>datasets/*</code></td>
+      <td>Datasets (e.g., CSV files)</td>
+    </tr>
+    <tr>
+      <td><code>img/*</code></td>
+      <td>Images (including course badge)</td>
+    </tr>
+    <tr>
+      <td><code>scripts/*</code></td>
+      <td>Narrative for slides and videos</td>
+    </tr>
+    <tr>
+      <td><code>slides/*</code></td>
+      <td>Markdown slides for videos</td>
+    </tr>
+    <tr>
+      <td><code>README.md</code></td>
+      <td>Course home page on GitHub</td>
+    </tr>
+    <tr>
+      <td><code>chapter<em>NNN</em>.md</code></td>
+      <td>One complete chapter</td>
+    </tr>
+    <tr>
+      <td><code>course.yml</code></td>
+      <td>Course metadata</td>
+    </tr>
+    <tr>
+      <td><code>requirements.r</code></td>
+      <td>Install R packages</td>
+    </tr>
+    <tr>
+      <td><code>requirements.sh</code></td>
+      <td>Install other packages</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3><code>course.yml</code></h3>
+  <table style="font-size:80%">
+    <tr>
+      <td>&star;</td>
+      <td><code>title</code></td>
+      <td>Course title</td>
+    </tr>
+    <tr>
+      <td>&star;</td>
+      <td><code>description</code></td>
+      <td>Brief description</td>
+    </tr>
+    <tr>
+      <td>&star;</td>
+      <td><code>programming_language</code></td>
+      <td><code>r</code>, <code>python</code>, <code>sql</code>, <code>shell</code></td>
+    </tr>
+    <tr>
+      <td>&star;</td>
+      <td><code>from</code></td>
+      <td>Reserved for DataCamp use</td>
+    </tr>
+    <tr>
+      <td>&star;</td>
+      <td><code>difficulty_level</code></td>
+      <td>1=beginner, 2=intermediate, 3=advanced</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>time_needed</code></td>
+      <td>E.g., "4 hours"</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>practice_pool_id</code></td>
+      <td>ID of course challenges</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>prerequisites</code></td>
+      <td>IDs of prerequisite courses</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>datasets</code></td>
+      <td>Keys and filenames of datasets</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>Datasets</h3>
+  <ul>
+    <li class="fragment">Can upload through the editor</li>
+    <li class="fragment">Or commit to <code>datasets/</code> folder with Git</li>
+    <li class="fragment">The next build will report the dataset URL
+      <ul>
+	<li class="fragment">Download and save once when building course's Docker image</li>
+	<li class="fragment">Download in each exericse</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Chapter Header</h3>
+  <table style="font-size:80%">
+    <tr>
+      <td>&star;</td>
+      <td><code>title</code></td>
+      <td>Chapter title</td>
+    </tr>
+    <tr>
+      <td>&star;</td>
+      <td><code>description</code></td>
+      <td>Brief description of the chapter</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>free_preview</code></td>
+      <td>Can chapter be previewed for free?</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>attachments</code></td>
+      <td>Extra files</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>Exercise Types</h3>
+  <table style="font-size:80%">
+    <tr>
+      <td>VideoExercise</td>
+      <td>Displays a video exercise</td>
+    </tr>
+    <tr>
+      <td>NormalExercise</td>
+      <td>Instructions, exercise, code editor, and console</td>
+    </tr>
+    <tr>
+      <td>MultipleChoiceExercise</td>
+      <td>Multiple choice question and console</td>
+    </tr>
+    <tr>
+      <td>PureMultipleChoiceExercise</td>
+      <td>Multiple choice question without console</td>
+    </tr>
+    <tr>
+      <td>TabExercise</td>
+      <td>Tabbed series of sub-exercises</td>
+    </tr>
+    <tr>
+      <td>BulletExercise</td>
+      <td>Tabbed series of sub-exercises</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>Exercise Properties</h3>
+  <ul>
+    <li class="fragment">Each exercise may have several properties</li>
+  </ul>
+  <table style="font-size:80%" class="fragment">
+    <tr>
+      <td><code>type</code></td>
+      <td>type of the exercise</td>
+    </tr>
+    <tr>
+      <td><code>key</code></td>
+      <td>unique key generated by DataCamp</td>
+    </tr>
+    <tr>
+      <td><code>lang</code></td>
+      <td>exercise language (<code>r</code>, <code>python</code>, <code>sql</code>, <code>shell</code>).</td>
+    </tr>
+    <tr>
+      <td><code>xp</code></td>
+      <td>the XP the student will receive</td>
+    </tr>
+    <tr>
+      <td><code>video_link</code></td>
+      <td>link to video</td>
+    </tr>
+    <tr>
+      <td><code>aspect_ratio</code></td>
+      <td>aspect ratio of video</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>A Note on Keys</h3>
+  <ul>
+    <li class="fragment">Automatically generated by DataCamp on each Git commit
+      <ul>
+	<li class="fragment"><em>Not</em> a hash of exercise contents</li>
+      </ul>
+    </li>
+    <li class="fragment">Persist for the life of the exercise</li>
+    <li class="fragment">Do not copy or modify
+      <ul>
+	<li class="fragment">Platform does its best to patch things if you do, but…</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      If you are editing on the desktop and pushing changes,
+      you need to pull after adding new exercises in order to get their keys
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Exercise Blocks</h3>
+  <table style="font-size:80%">
+    <tr>
+      <td><code>title</code></td>
+      <td>title of the exercise</td>
+    </tr>
+    <tr>
+      <td><code>assignment</code></td>
+      <td>lesson and problem description</td>
+    </tr>
+    <tr>
+      <td><code>instructions</code></td>
+      <td>specific question or task</td>
+    </tr>
+    <tr>
+      <td><code>hint</code></td>
+      <td>shown on request</td>
+    </tr>
+    <tr>
+      <td><code>pre_exercise_code</code></td>
+      <td>run before student starts coding</td>
+    </tr>
+    <tr>
+      <td><code>sample_code</code></td>
+      <td>starting point for student's work</td>
+    </tr>
+    <tr>
+      <td><code>solution</code></td>
+      <td>a correct solution (shown on demand)</td>
+    </tr>
+    <tr>
+      <td><code>sct</code></td>
+      <td>correctness tests</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>Special Cases</h3>
+  <table style="font-size:80%">
+    <tr>
+      <td colspan="2">
+	Video Exercises
+      </td>
+    </tr>
+    <tr>
+      <td><code>video_link</code></td>
+      <td>link to video</td>
+    </tr>
+    <tr>
+      <td><code>aspect_ratio</code></td>
+      <td>video aspect ratio</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+	<br/>
+	Pure Multiple Choice Questions
+      </td>
+    </tr>
+    <tr>
+      <td><code>possible_answers</code></td>
+      <td>list of possible answers</td>
+    </tr>
+    <tr>
+      <td><code>feedbacks</code></td>
+      <td>corresponding list feedbacks</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>Slides</h3>
+  <ul>
+    <li class="fragment">Created in Teach editor for VideoExercise
+      <ul>
+	<li class="fragment">Use "Slide Editing" in right-hand dropdown to edit</li>
+      </ul>
+    </li>
+    <li class="fragment">Slide header specifies title, exercise key, etc.</li>
+    <li class="fragment">Several different slide types</li>
+    <li class="fragment">Each slide can have:
+      <ul>
+	<li class="fragment">Title</li>
+	<li class="fragment">Script</li>
+	<li class="fragment">Parts (for multi-row/multi-column layouts)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Previewing Slides</h3>
+  <ul>
+    <li class="fragment">"Slide Editing" mode
+      <ul>
+	<li class="fragment">Preview window shows active slide deck</li>
+	<li class="fragment">navigate by giving it focus and using the arrows</li>
+	<li class="fragment">No video in this preview</li>
+      </ul>
+    </li>
+    <li class="fragment">"Slide Timing" mode
+      <ul>
+	<li class="fragment">Preview window shows active slide deck <em>with video</em></li>
+	<li class="fragment">Start video by clicking play button</li>
+	<li class="fragment">Or space bar if "Slide Timer" window has focus</li>
+      </ul>
+    </li>
+  </ul>
 </section>
 	
 <section>
   <h3>What We Just Did</h3>
   <div align="center" class="fragment">
-    <p>Next: <a href="./course-exercises.html">Crafting Course Exercises</a></p>
+    <ol>
+      <li class="fragment">Explained edit/build/check lifecycle</li>
+      <li class="fragment">Described structure of courses and exercises</li>
+      <li class="fragment">Lots of details, but most are fairly logical once the lifecycle and overall structure are understood</li>
+    </ol>
+    <p align="center" class="fragment">
+      Documentation available at
+      <br/>
+      <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a>
+    </p>
   </div>
 </section>
