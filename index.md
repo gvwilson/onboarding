@@ -9,9 +9,9 @@
 ----
 
 -   [Designing a Course](./course-design.html)
--   [Building a Course](./course-build.html)
 -   [Course Exercises](./course-exercises.html)
--   [Creating a Project](./project.html)
+-   [Building a Course](./course-build.html)
+-   *[Creating a Project](./project.html) (to be done)*
 
 ----
 
