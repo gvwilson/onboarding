@@ -182,120 +182,120 @@ test_student_submission(their_code, its_output)
 </section>
 
 <section>
-  <h3>Repository Structure</h3>
+  <h3>Test: Course Structure</h3>
   <table style="font-size:80%" align="left">
     <tr>
       <td><code>datasets/*</code></td>
-      <td>Datasets (e.g., CSV files)</td>
+      <td class="fragment">Datasets (e.g., CSV files)</td>
     </tr>
     <tr>
       <td><code>img/*</code></td>
-      <td>Images (including course badge)</td>
+      <td class="fragment">Images (including course badge)</td>
     </tr>
     <tr>
       <td><code>scripts/*</code></td>
-      <td>Narrative for slides and videos</td>
+      <td class="fragment">Narrative for slides and videos</td>
     </tr>
     <tr>
       <td><code>slides/*</code></td>
-      <td>Markdown slides for videos</td>
+      <td class="fragment">Markdown slides for videos</td>
     </tr>
     <tr>
       <td><code>README.md</code></td>
-      <td>Course home page on GitHub</td>
+      <td class="fragment">Course home page on GitHub</td>
     </tr>
     <tr>
       <td><code>course.yml</code></td>
-      <td>Course metadata</td>
+      <td class="fragment">Course metadata</td>
     </tr>
     <tr>
       <td><code>chapter<em>NNN</em>.md</code></td>
-      <td>One complete chapter</td>
+      <td class="fragment">One complete chapter</td>
     </tr>
     <tr>
       <td><code>requirements.r</code></td>
-      <td>Install R packages</td>
+      <td class="fragment">Install R packages</td>
     </tr>
     <tr>
       <td><code>requirements.sh</code></td>
-      <td>Install other packages</td>
+      <td class="fragment">Install other packages</td>
     </tr>
   </table>
 </section>
 
 <section>
-  <h3><code>course.yml</code></h3>
+  <h3>Test: <code>course.yml</code></h3>
   <table style="font-size:80%" align="left">
     <tr>
       <td>&star;</td>
       <td><code>title</code></td>
-      <td>Course title</td>
+      <td class="fragment">Course title</td>
     </tr>
     <tr>
       <td>&star;</td>
       <td><code>description</code></td>
-      <td>Brief description</td>
+      <td class="fragment">Brief description</td>
     </tr>
     <tr>
       <td>&star;</td>
       <td><code>programming_language</code></td>
-      <td><code>r</code>, <code>python</code>, <code>sql</code>, <code>shell</code></td>
+      <td class="fragment"><code>r</code>, <code>python</code>, <code>sql</code>, <code>shell</code></td>
     </tr>
     <tr>
       <td>&star;</td>
       <td><code>from</code></td>
-      <td>Reserved for DataCamp use</td>
+      <td class="fragment">Reserved (Docker image ID)</td>
     </tr>
     <tr>
       <td>&star;</td>
       <td><code>difficulty_level</code></td>
-      <td>1=beginner, 2=intermediate, 3=advanced</td>
+      <td class="fragment">1=beginner, 2=intermediate, 3=advanced</td>
     </tr>
     <tr>
       <td></td>
       <td><code>time_needed</code></td>
-      <td>E.g., "4 hours"</td>
+      <td class="fragment">E.g., "4 hours"</td>
     </tr>
     <tr>
       <td></td>
       <td><code>practice_pool_id</code></td>
-      <td>ID of course challenges</td>
+      <td class="fragment">ID of course challenges</td>
     </tr>
     <tr>
       <td></td>
       <td><code>prerequisites</code></td>
-      <td>IDs of prerequisite courses</td>
+      <td class="fragment">IDs of prerequisite courses</td>
     </tr>
     <tr>
       <td></td>
       <td><code>datasets</code></td>
-      <td>Keys and filenames of datasets</td>
+      <td class="fragment">Keys and filenames of datasets</td>
     </tr>
   </table>
 </section>
 
 <section>
-  <h3>Chapter Header</h3>
+  <h3>Test: Chapter Header</h3>
   <table style="font-size:80%" align="left">
     <tr>
       <td>&star;</td>
       <td><code>title</code></td>
-      <td>Chapter title</td>
+      <td class="fragment">Chapter title</td>
     </tr>
     <tr>
       <td>&star;</td>
       <td><code>description</code></td>
-      <td>Brief description of the chapter</td>
+      <td class="fragment">Brief description of the chapter</td>
     </tr>
     <tr>
       <td></td>
       <td><code>free_preview</code></td>
-      <td>Can chapter be previewed for free?</td>
+      <td class="fragment">Can chapter be previewed for free?</td>
     </tr>
     <tr>
       <td></td>
       <td><code>attachments</code></td>
-      <td>Extra files</td>
+      <td class="fragment">Info about extra files</td>
     </tr>
   </table>
 </section>
@@ -305,26 +305,30 @@ test_student_submission(their_code, its_output)
   <table style="font-size:80%" align="left">
     <tr>
       <td>VideoExercise</td>
-      <td>Displays a video exercise</td>
+      <td>Video exercise</td>
     </tr>
     <tr>
       <td>NormalExercise</td>
-      <td>Instructions, exercise, code editor, and console</td>
+      <td>Instructions, editor, and console</td>
+    </tr>
+    <tr>
+      <td>NormalExercise</td>
+      <td>Instructions and console</td>
     </tr>
     <tr>
       <td>MultipleChoiceExercise</td>
-      <td>Multiple choice question and console</td>
+      <td>MCQ with console</td>
     </tr>
     <tr>
       <td>PureMultipleChoiceExercise</td>
-      <td>Multiple choice question without console</td>
+      <td>MCQ without console</td>
     </tr>
     <tr>
-      <td>TabExercise</td>
+      <td>TabExercise<br/>TabConsoleExercise</td>
       <td>Tabbed series of sub-exercises</td>
     </tr>
     <tr>
-      <td>BulletExercise</td>
+      <td>BulletExercise<br/>BulletConsoleExercise</td>
       <td>Tabbed series of sub-exercises</td>
     </tr>
   </table>
@@ -476,12 +480,17 @@ test_student_submission(their_code, its_output)
 	
 <section>
   <h3>What We Just Did</h3>
-  <div align="center" class="fragment">
-    <ol>
-      <li class="fragment">Explained edit/build/check lifecycle</li>
-      <li class="fragment">Described structure of courses and exercises</li>
-      <li class="fragment">Lots of details, but most are fairly logical once the lifecycle and overall structure are understood</li>
-    </ol>
+  <ol>
+    <li class="fragment">Explained edit/build/check lifecycle</li>
+    <li class="fragment">Described architecture of courses and exercises
+      <ul>
+	<li class="fragment">Had you check understanding by imputing meaning to key terms</li>
+	<li class="fragment">Which is another good teaching technique</li>
+      </ul>
+    </li>
+    <li class="fragment">Lots of details, but most are fairly logical once the lifecycle and overall structure are understood</li>
+  </ol>
+  <div align="center">
     <p align="center" class="fragment">
       Documentation available at
       <br/>
