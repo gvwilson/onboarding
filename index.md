@@ -13,7 +13,7 @@
     -   *[Course Guidelines](./course-guidelines.html) (to be done)*
 -   Projects
     -   [Creating a Project](./project.html)
-    -   *[Project Guidelines](./project-guidelines.html) (to be done)*
+    -   [Project Guidelines](./project-guidelines.html)
 -   Supporting Documents
     -   [Design of this Material](./design.html)
     -   [License](./license.html)
