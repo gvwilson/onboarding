@@ -12,7 +12,8 @@
     -   [Building a Course](./course-build.html)
     -   *[Course Guidelines](./course-guidelines.html) (to be done)*
 -   Projects
-    -   *[Creating a Project](./project.html) (to be done)*
+    -   [Creating a Project](./project.html)
+    -   *[Project Guidelines](./project-guidelines.html) (to be done)*
 -   Supporting Documents
     -   [Design of this Material](./design.html)
     -   [License](./license.html)
