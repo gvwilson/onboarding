@@ -10,7 +10,7 @@
     -   [Designing a Course](./course-design.html)
     -   [Course Exercises](./course-exercises.html)
     -   [Building a Course](./course-build.html)
-    -   *[Course Guidelines](./course-guidelines.html) (to be done)*
+    -   [Course Guidelines](./course-guidelines.html)
 -   Projects
     -   [Creating a Project](./project.html)
     -   [Project Guidelines](./project-guidelines.html)
