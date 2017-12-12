@@ -14,18 +14,19 @@ title: Building a Course
 </section>
 
 <section>
-  <h3>Courses in Action</h3>
+  <h3>Architecture</h3>
   <ul>
     <li class="fragment">We use Docker to provide a fresh Linux virtual machine for each exercise</li>
-    <li class="fragment">Basic image provided per technology
+    <li class="fragment">Standard Docker image per technology
       <ul>
-	<li class="fragment">You can install packages, add datasets, etc.</li>
+	<li class="fragment">Customize by writing a requirements script to be executed as image is built</li>
+	<li class="fragment">Install packages and datasets, etc.</li>
       </ul>
     </li>
     <li class="fragment">Each coding exercise has a sample solution and some submission correctness tests (SCTs)
       <ul>
-	<li class="fragment">We test courses by running sample solutions through SCTs</li>
-	<li class="fragment">We test students' answers by running <em>their</em> solutions through the same SCTs</li>
+	<li class="fragment">Test courses by running SCTs on sample solutions</li>
+	<li class="fragment">Test students by running SCTs on their solutions</li>
       </ul>
     </li>
   </ul>
@@ -53,26 +54,136 @@ title: Building a Course
 <section>
   <h3>Lifecycle</h3>
   <ul>
-    <li class="fragment">Add/edit chapters, slides, videos, and datasets
+    <li class="fragment">Add chapters, slides, videos, and datasets
       <ul>
-	<li class="fragment">Desktop + GitHub</li>
-	<li class="fragment">Our editor (which provides preview)</li>
+	<li class="fragment">Edit on the desktop + push to GitHub</li>
+	<li class="fragment">Use our editor (which provides preview)</li>
       </ul>
     </li>
-    <li class="fragment">Our system repeatedly <em>builds</em> the course
+    <li class="fragment">Our system <em>builds</em> the course after each commit
       <ul>
-	<li class="fragment">Check syntax</li>
-	<li class="fragment">Run sample solutions through correctness tests</li>
-	<li class="fragment">By default, only checks chapters that have changed</li>
+	<li class="fragment">Checks syntax</li>
+	<li class="fragment">Runs sample solutions through correctness tests</li>
       </ul>
     </li>
+    <li class="fragment">By default, only checks chapters that have changed</li>
+  </ul>
+</section>
+
+<section>
+  <h3>The Build Process</h3>
+  <ul>
     <li class="fragment">Use multiple branches in one repository instead of forking repositories</li>
+    <li class="fragment">First build in a branch assigns a unique numeric ID to that branch of that course
+      <ul>
+	<li class="fragment">Displayed in the build log</li>
+	<li class="fragment">Then used in dashboard, dataset URLs, etc.</li>
+      </ul>
+    </li>
+    <li class="fragment">Course always deployed from <code>master</code></li>
+    <li class="fragment">
+      When merging branches into <code>master</code>,
+      be sure to leave the right ID in requirements script
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Datasets</h3>
+  <ul>
+    <li class="fragment">Can upload through the editor</li>
+    <li class="fragment">Or commit to <code>datasets/</code> folder with Git</li>
+    <li class="fragment">The next build will report the dataset URL
+      <ul>
+	<li class="fragment">Download and save once when building course's Docker image</li>
+	<li class="fragment">Download in each exericse</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Chapters and Exercises</h3>
+  <ul>
+    <li class="fragment">Each chapter has YAML metadata and some exercises</li>
+    <li class="fragment">Each exercise is a Markdown block
+      <ul>
+	<li class="fragment"><code>--- type:Type xp:123 key:1234567890</code></li>
+	<li class="fragment">Then a sub-heading "<code>## Title</code>"</li>
+	<li class="fragment">Then sub-blocks marked by "<code>*** =key</code>"</li>
+      </ul>
+    </li>
+    <li class="fragment">Online editor will insert skeletons for you</li>
+  </ul>
+</section>
+
+<section>
+  <h3>A Typical Exercise</h3>
+<pre>
+--- type:ConsoleExercise xp:100 key:1234567890
+## Title of exercise
+
+Here's a new idea or a restatement of an old one.
+
+*** =instructions
+
+Here's what we'd like you to do.
+
+*** =solution
+```{bash}
+a_working_solution("used in testing", "shown to users")
+```
+
+*** =sct
+```{python}
+test_student_submission(their_code, its_output)
+```
+</pre>
+</section>
+
+<section>
+  <h3>A Note on Languages</h3>
+  <ul>
+    <li class="fragment">Language used to execute solutions and SCTs is fixed
+      <table class="fragment" style="font-size:80%">
+	<tr><th>Course Language</th><th>Solutions</th><th>SCTs</th></tr>
+	<tr><td>R</td><td>R</td><td>R</td></tr>
+	<tr><td>Python</td><td>Python</td><td>Python</td></tr>
+	<tr><td>SQL</td><td>SQL</td><td>Python</td></tr>
+	<tr><td>Shell</td><td>Bash</td><td>Python</td></tr>
+      </table>
+    </li>
+    <li class="fragment">
+      Changing the name in the opening <code>```{name}</code>
+      only changes how the code is colorized for display
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>A Note on Keys</h3>
+  <ul>
+    <li class="fragment">Automatically generated by DataCamp on each Git commit
+      <ul>
+	<li class="fragment"><em>Not</em> a hash of exercise contents</li>
+      </ul>
+    </li>
+    <li class="fragment">Persist for the life of the exercise</li>
+    <li class="fragment">Do not copy or modify
+      <ul>
+	<li class="fragment">Platform does its best to patch things if you do, but…</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      If you are editing on the desktop and pushing changes,
+      you need to pull after adding new exercises in order to get their keys
+    </li>
   </ul>
 </section>
 
 <section>
   <h3>Repository Structure</h3>
-  <table style="font-size:80%">
+  <table style="font-size:80%" align="left">
     <tr>
       <td><code>datasets/*</code></td>
       <td>Datasets (e.g., CSV files)</td>
@@ -94,12 +205,12 @@ title: Building a Course
       <td>Course home page on GitHub</td>
     </tr>
     <tr>
-      <td><code>chapter<em>NNN</em>.md</code></td>
-      <td>One complete chapter</td>
-    </tr>
-    <tr>
       <td><code>course.yml</code></td>
       <td>Course metadata</td>
+    </tr>
+    <tr>
+      <td><code>chapter<em>NNN</em>.md</code></td>
+      <td>One complete chapter</td>
     </tr>
     <tr>
       <td><code>requirements.r</code></td>
@@ -114,7 +225,7 @@ title: Building a Course
 
 <section>
   <h3><code>course.yml</code></h3>
-  <table style="font-size:80%">
+  <table style="font-size:80%" align="left">
     <tr>
       <td>&star;</td>
       <td><code>title</code></td>
@@ -164,22 +275,8 @@ title: Building a Course
 </section>
 
 <section>
-  <h3>Datasets</h3>
-  <ul>
-    <li class="fragment">Can upload through the editor</li>
-    <li class="fragment">Or commit to <code>datasets/</code> folder with Git</li>
-    <li class="fragment">The next build will report the dataset URL
-      <ul>
-	<li class="fragment">Download and save once when building course's Docker image</li>
-	<li class="fragment">Download in each exericse</li>
-      </ul>
-    </li>
-  </ul>
-</section>
-
-<section>
   <h3>Chapter Header</h3>
-  <table style="font-size:80%">
+  <table style="font-size:80%" align="left">
     <tr>
       <td>&star;</td>
       <td><code>title</code></td>
@@ -205,7 +302,7 @@ title: Building a Course
 
 <section>
   <h3>Exercise Types</h3>
-  <table style="font-size:80%">
+  <table style="font-size:80%" align="left">
     <tr>
       <td>VideoExercise</td>
       <td>Displays a video exercise</td>
@@ -238,7 +335,7 @@ title: Building a Course
   <ul>
     <li class="fragment">Each exercise may have several properties</li>
   </ul>
-  <table style="font-size:80%" class="fragment">
+  <table class="fragment" style="font-size:80%" align="left">
     <tr>
       <td><code>type</code></td>
       <td>type of the exercise</td>
@@ -267,29 +364,8 @@ title: Building a Course
 </section>
 
 <section>
-  <h3>A Note on Keys</h3>
-  <ul>
-    <li class="fragment">Automatically generated by DataCamp on each Git commit
-      <ul>
-	<li class="fragment"><em>Not</em> a hash of exercise contents</li>
-      </ul>
-    </li>
-    <li class="fragment">Persist for the life of the exercise</li>
-    <li class="fragment">Do not copy or modify
-      <ul>
-	<li class="fragment">Platform does its best to patch things if you do, but…</li>
-      </ul>
-    </li>
-    <li class="fragment">
-      If you are editing on the desktop and pushing changes,
-      you need to pull after adding new exercises in order to get their keys
-    </li>
-  </ul>
-</section>
-
-<section>
   <h3>Exercise Blocks</h3>
-  <table style="font-size:80%">
+  <table style="font-size:80%" align="left">
     <tr>
       <td><code>title</code></td>
       <td>title of the exercise</td>
@@ -327,7 +403,7 @@ title: Building a Course
 
 <section>
   <h3>Special Cases</h3>
-  <table style="font-size:80%">
+  <table style="font-size:80%" align="left">
     <tr>
       <td colspan="2">
 	Video Exercises
