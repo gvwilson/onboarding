@@ -1,4 +1,4 @@
-# Teaching and Learning
+# DataCamp Instructor Onboarding
 
-This repository hosts materials used in DataCamp's introduction to teaching and learning.
-See [the site](https://datacamp.github.io/courses-teaching-and-learning/) for links to slides and other content.
+This repository hosts materials used in DataCamp's instructor onboarding process.
+See [the site](https://datacamp.github.io/instructor-onboarding/) for links to slides and other content.
