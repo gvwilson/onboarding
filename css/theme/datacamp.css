@@ -15,7 +15,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 body {
   background: #fff;
-  background-color: #fff; }
+  background-color: #fff;
+  background-image: url(../../img/datacamp.png);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: 98% 5%;
+}
 
 .reveal {
   font-family: "karmina-sans", sans-serif;
