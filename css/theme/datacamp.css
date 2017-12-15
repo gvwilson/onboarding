@@ -16,10 +16,6 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 body {
   background: #fff;
   background-color: #fff;
-  background-image: url(../../img/datacamp.png);
-  background-size: 10%;
-  background-repeat: no-repeat;
-  background-position: 98% 5%;
 }
 
 .reveal {
@@ -42,6 +38,16 @@ body {
 .reveal .slides > section > section {
   line-height: 1.3;
   font-weight: inherit; }
+
+.reveal .slides > section {
+  background-image: url(../../img/datacamp.png);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: 98% 1em; }
+
+.reveal .slides > section.titleslide {
+  background-image: none;
+}
 
 /*********************************************
  * HEADERS
