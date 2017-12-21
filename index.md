@@ -16,6 +16,7 @@ See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> 
     -   [Designing a Course](./course-design.html)
     -   [Course Exercises](./course-exercises.html)
     -   [Building a Course](./course-build.html)
+    -   [The Course Editor](./course-editor.html)
     -   [Course Guidelines](./course-guidelines.html)
     -   [Course Handoff](./course-handoff.html)
 -   Projects
