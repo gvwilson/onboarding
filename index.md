@@ -29,4 +29,4 @@ See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> 
     -   [Contributing](./contributing.html)
     -   [Citation](./citation.html)
 
-<img src="img/cc-by-license.png" alt="CC-BY" width="200"/>
+<img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="200"/>
