@@ -46,6 +46,8 @@ don't understand the example given ("sure enough...")
 
 in the videos? exercises?
 
+# course-design
+
 ## 93: activities
 
 should we have them use 2-4 bullets, with each mimicking an instruction?
@@ -125,3 +127,16 @@ TODO: nick to review when back online - hard to view in html
 # course editor
 
 vision here? how much do we want to get into this given the product will change? maybe better to create short screencasts for just-in-time docs?
+
+# course-guidelines
+
+- "First chapter is shorter because it's the funnel" --> and we want to give students a sense of accomplishment early on, to motivate them to continue
+- "1-4 instructions per exercise"; "10-480 characters (2-80 words) per instruction" --> doesn't add up?
+- "Starter Code" --> "Sample Code"
+- for sample code, does the 0-10 lines include white space? I forget what was decided here
+- in commenting example, we don't normally use periods in comments (unless separating two short sentences)
+- "1-4 hints per exercise" --> mention these often map 1-1 with instructions?
+
+# course-handoff
+
+- "Process designed to minimize surprises for everyone" --> "Process designed to maximize productivity and minimize surprises"? or something like that to make it clear we're very instructor-centric
