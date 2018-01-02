@@ -2,7 +2,7 @@
 layout: slides
 title: Course Guidelines
 ---
-	
+
 <section>
   <h3>Overview</h3>
   <ul>
@@ -62,7 +62,11 @@ title: Course Guidelines
 	<li class="fragment">Other chapters: 10-16 exercises (15 is best)</li>
       </ul>
     </li>
-    <li class="fragment">First chapter is shorter because it's the funnel</li>
+    <li class="fragment">First chapter is shorter because it's the funnel
+      <ul>
+        <li class="fragment">And to give learners a sense of accomplishment</li>
+      </ul>
+    </li>
   </ul>
 </section>
 
@@ -72,7 +76,7 @@ title: Course Guidelines
     <li class="fragment">Inclusive voice
       <ul>
 	<li class="fragment">We are doing this together</li>
-	<li class="fragment">"Let's removed <code>Survived</code> from the dataset."</li>
+	<li class="fragment">"Let's remove <code>Survived</code> from the dataset."</li>
       </ul>
     </li>
     <li class="fragment">Avoid exclamation marks!!
@@ -95,8 +99,8 @@ title: Course Guidelines
     <li class="fragment">Length of instructions is the largest influence on completion rates
       <ul>
 	<li class="fragment">1-4 instructions per exercise</li>
-	<li class="fragment">10-480 characters (2-80 words) per instruction</li>
-	<li class="fragment">Average per chapter less than 360 characters (60 words)</li>
+	<li class="fragment">Average 50 words per instruction</li>
+	<li class="fragment">See <a href="http://authoring.datacamp.com">documentation</a> for up-to-date guidelines</li>
       </ul>
     </li>
   </ul>
@@ -128,7 +132,7 @@ title: Course Guidelines
 <section>
   <h3>Starter Code</h3>
   <ul>
-    <li class="fragment">0-10 lines</li>
+    <li class="fragment">0-10 lines (including blank lines)</li>
     <li class="fragment">More detailed than in a project</li>
     <li class="fragment">Use the imperative voice in comments</li>
   </ul>
@@ -137,20 +141,20 @@ title: Course Guidelines
       <td class="fragment">
         <p>Wrong</p>
 <pre>
-# This sets plots to a nice size.
+# This sets plots to a nice size
 options(repr.plot.width = 4)
 
-# This loads the ggplot2 library.
+# This loads the ggplot2 library
 library(ggplot2)
 </pre>
       </td>
       <td class="fragment">
         <p>Right</p>
 <pre>
-# Customize plot width.
+# Customize plot width
 options(repr.plot.width = 4)
 
-# Load ggplot2.
+# Load ggplot2
 library(ggplot2)
 </pre>
       </td>
@@ -162,7 +166,11 @@ library(ggplot2)
   <h3>Hints</h3>
   <ul>
     <li class="fragment">No more than 180-360 characters (30-60 words)
-    <li class="fragment">1-4 hints per exercise</li>
+    <li class="fragment">1-4 hints per exercise
+      <ul>
+        <li class="fragment">Usually map 1-to-1 with instructions</li>
+      </ul>
+    </li>
     <li class="fragment">May include scaffolded code</li>
     <li class="fragment">"Assemble the data frame <code>df</code> using<br/><code>data.frame(t = t, x = sin(t), ___)</code>"</li>
   </ul>
