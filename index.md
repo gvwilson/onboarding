@@ -4,7 +4,7 @@
 
 <a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a>
 
-Version {{site.version}}
+Version {{site.version}} built {{ site.time | date_to_rfc822 }}
 
 See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation
 

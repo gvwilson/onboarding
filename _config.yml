@@ -2,6 +2,7 @@ repository: <USERNAME>/<PROJECT>
 title: Instructor Onboarding
 
 version: "0.1"
+destination: docs
 
 highlighter: rouge
 markdown: kramdown
