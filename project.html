@@ -5,10 +5,160 @@ title: Creating a Project
 
 <section>
   <h3>Overview</h3>
-  <p>FIXME</p>
+  <ul>
+    <li class="fragment">Allow learners to apply what they've learned…</li>
+    <li class="fragment">…to an end-to-end analysis on a real-world task…</li>
+    <li class="fragment">…and show their work to others</li>
+    <li class="fragment">An opportunity for self-assessment</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Architecture</h3>
+  <ul>
+    <li class="fragment">
+      A Git repository containing:
+      <ul>
+	<li class="fragment">A <a href="http://jupyter.org/">Jupyter Notebook</a> with specially-formatted cells</li>
+	<li class="fragment">Metadata in a separate file</li>
+	<li class="fragment">Datasets, images, etc.</li>
+	<li class="fragment">Requirements script to install packages, download datasets, etc.</li>
+      </ul>
+    </li>
+    <li class="fragment">Edit the notebook directly or edit and preview online</li>
+    <li class="fragment">Work in the <code>develop</code> branch
+      <ul>
+	<li class="fragment"><code>master</code> is used to deploy</li>
+	<li class="fragment">DataCamp will merge your work into it</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>The Notebook</h3>
+  <ul>
+    <li class="fragment">8-10 steps</li>
+    <li class="fragment">Each step provides <em>context</em></li>
+    <li class="fragment">Then <em>instructions</em> specifying what to do</li>
+    <li class="fragment">And also:
+      <ul>
+	<li class="fragment">Title</li>
+	<li class="fragment">Sample code (starting point for user's work)</li>
+	<li class="fragment">Hint (show if asked)</li>
+	<li class="fragment">Tests (for the user's code)</li>
+	<li class="fragment">Solution (check the tests and show if asked)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Voice</h3>
+  <ul>
+    <li class="fragment">Context is written like a blog post
+      <ul>
+	<li class="fragment">"Suppose we want to…"</li>
+	<li class="fragment">"Next, we load the libraries…"</li>
+      </ul>
+    </li>
+    <li class="fragment">Instructions are written as direct imperatives
+      <ul>
+	<li class="fragment">"Load the library."</li>
+	<li class="fragment">"Plot the expected distribution."</li>
+      </ul>
+    </li>
+    <li class="fragment">Be brief
+      <ul>
+	<li class="fragment">Users shouldn't have to scroll within a step</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+<section>
+  <h3>Behind the Scenes</h3>
+  <ul>
+    <li class="fragment">We use Docker to provide a fresh Linux virtual machine for each project</li>
+    <li class="fragment">Customize image by writing a <code>requirements.sh</code> script to be executed when image built
+      <ul>
+	<li class="fragment">Install packages and datasets, etc.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Tests</h3>
+  <ul>
+    <li class="fragment">
+      Tests use <code>nose</code> (for Python) or <code>testwhat</code> (for R)
+      <ul>
+	<li class="fragment">Impractical to test everything users might do</li>
+	<li class="fragment">Projects are much less constrained than course exercises</li>
+      </ul>
+    </li>
+    <li class="fragment">Test data structures rather than generated figures</li>
+    <li class="fragment">Users can run individual cells as they go along
+      <ul>
+	<li class="fragment">Or select the next heading and "run above" to check cumulative effect</li>
+      </ul>
+    </li>
+    <li class="fragment">Users can add cells (but probably shouldn't)</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Metadata</h3>
+  <ul>
+    <li class="fragment">Stored in <code>project.yml</code></li>
+  </ul>
+  <table class="fragment" style="font-size:80%" align="left">
+    <tr>
+      <td><code>title</code></td>
+      <td>Project title</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>Brief description</td>
+    </tr>
+    <tr>
+      <td><code>long_description</code></td>
+      <td>Full description</td>
+    </tr>
+    <tr>
+      <td><code>time_needed</code></td>
+      <td>E.g., "45 minutes"</td>
+    </tr>
+    <tr class="fragment">
+      <td colspan="2">…and other fields that DataCamp will fill in</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>Project Specification</h3>
+  <ul>
+    <li class="fragment">First step is to fill in a project spec (also a Notebook)</li>
+    <li class="fragment">Name, email, short and long descriptions, datasets, student background</li>
+    <li class="fragment">First three tasks of the project
+      <ul>
+	<li class="fragment">Without instructions, hint, or tests</li>
+	<li class="fragment">But <em>with</em> solution</li>
+	<li class="fragment">What you would put in a blog post</li>
+      </ul>
+    </li>
+    <li class="fragment">All of this is re-used in the completed project</li>
+  </ul>
 </section>
 
 <section>
   <h3>What We Just Did</h3>
-  <p>FIXME</p>
+  <ol>
+    <li class="fragment">Described how projects are structured</li>
+    <li class="fragment">Outlined how projects are executed</li>
+    <li class="fragment">Explained what goes into a project specification</li>
+  </ol>
+  <div align="center" class="fragment">
+    <p>Next: <a href="./project-guidelines.html">Project Guidelines</a></p>
+  </div>
 </section>

@@ -1,0 +1,228 @@
+---
+layout: slides
+title: Course Guidelines
+---
+	
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li class="fragment">Consistency reduces friction when learning</li>
+    <li class="fragment">We want to implement good teaching practices</li>
+    <li class="fragment">Our data tells us how to make online material more engaging</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Foundations</h3>
+  <p>Carroll et al: "The Minimal Manual". <em>Human-Computer Interaction</em>, 3(2), 1987</p>
+  <ol>
+    <li class="fragment">Start learners on meaningful tasks immediately.</li>
+    <li class="fragment">Minimize reading and other passive activities.
+      <ul>
+        <li class="fragment">Present instruction as self-contained single-page tasks.</li>
+        <li class="fragment">Allow users to fill in gaps themselves.</li>
+      </ul>
+    </li>
+    <li class="fragment">Include error recognition and recovery activities.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>Orwell's Rules</h3>
+  <div style="font-size:90%">
+    <ol>
+      <li>Never use a metaphor, simile or other figure of speech which you are used to seeing in print.</li>
+      <li>Never use a long word where a short one will do.</li>
+      <li>If it is possible to cut a word out, always cut it out.</li>
+      <li>Never use the passive where you can use the active.</li>
+      <li>Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.</li>
+      <li>Break any of these rules sooner than say anything barbarous.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h3>Petzold's Rules</h3>
+  <ol>
+    <li>Don't even try to compete with the docs.</li>
+    <li>Forget about comprehensiveness.</li>
+    <li>Write shorter chapters.</li>
+    <li>It's all about the code.</li>
+    <li>Get the reader involved.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>Large-Scale Requirements</h3>
+  <ul>
+    <li class="fragment">Most users should be able to complete a course in 2.5-3.5 hours</li>
+    <li class="fragment">4-5 chapters with 40-60 exercises in total
+      <ul>
+	<li class="fragment">Chapter 1: 8-12 exercises (10 is best)</li>
+	<li class="fragment">Other chapters: 10-16 exercises (15 is best)</li>
+      </ul>
+    </li>
+    <li class="fragment">First chapter is shorter because it's the funnel</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Voice</h3>
+  <ul>
+    <li class="fragment">Inclusive voice
+      <ul>
+	<li class="fragment">We are doing this together</li>
+	<li class="fragment">"Let's removed <code>Survived</code> from the dataset."</li>
+      </ul>
+    </li>
+    <li class="fragment">Avoid exclamation marks!!
+      <ul>
+	<li class="fragment">And remember that most jokes aren't funny the second time around</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Exercises</h3>
+  <ul>
+    <li class="fragment">Use coding exercises wherever possible
+      <ul>
+	<li class="fragment">Pure MCQs only test recognition and recall</li>
+	<li class="fragment">Unfortunately, today's technology can't grade free-text answers accurately</li>
+      </ul>
+    </li>
+    <li class="fragment">Length of instructions is the largest influence on completion rates
+      <ul>
+	<li class="fragment">1-4 instructions per exercise</li>
+	<li class="fragment">10-480 characters (2-80 words) per instruction</li>
+	<li class="fragment">Average per chapter less than 360 characters (60 words)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Good Instructions</h3>
+  <ul>
+    <li class="fragment">State the objective of the task
+      <ul>
+	<li class="fragment">"Create a dataframe called <code>df</code> containing 50 points on a circle and plot it."</li>
+	<li class="fragment">Specify variable names to simplify checks</li>
+      </ul>
+    </li>
+    <li class="fragment">Make sub-goals explicit
+      <ul>
+	<li class="fragment">"Create a vector of 50 angles from 0 to 2&pi; radians."</li>
+	<li class="fragment">"Display a scatterplot using <code>ggplot2</code>."</li>
+      </ul>
+    </li>
+    <li class="fragment">Make acceptance criteria very clear
+      <ul>
+	<li class="fragment">False negatives are extremely frustrating</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Starter Code</h3>
+  <ul>
+    <li class="fragment">0-10 lines</li>
+    <li class="fragment">More detailed than in a project</li>
+    <li class="fragment">Use the imperative voice in comments</li>
+  </ul>
+  <table>
+    <tr>
+      <td class="fragment">
+        <p>Wrong</p>
+<pre>
+# This sets plots to a nice size.
+options(repr.plot.width = 4)
+
+# This loads the ggplot2 library.
+library(ggplot2)
+</pre>
+      </td>
+      <td class="fragment">
+        <p>Right</p>
+<pre>
+# Customize plot width.
+options(repr.plot.width = 4)
+
+# Load ggplot2.
+library(ggplot2)
+</pre>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>Hints</h3>
+  <ul>
+    <li class="fragment">No more than 180-360 characters (30-60 words)
+    <li class="fragment">1-4 hints per exercise</li>
+    <li class="fragment">May include scaffolded code</li>
+    <li class="fragment">"Assemble the data frame <code>df</code> using<br/><code>data.frame(t = t, x = sin(t), ___)</code>"</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Solutions</h3>
+  <ul>
+    <li class="fragment">1-15 lines
+      <ul>
+	<li class="fragment">See guidelines for tab and bullet exercises below</li>
+      </ul>
+    </li>
+    <li class="fragment">Should run in 5 seconds or less on a regular laptop</li>
+    <li class="fragment">
+      So add datasets to the Docker image with <code>requirements.sh</code>
+      unless it's completely impractical
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Tab and Bullet Exercises</h3>
+  <ul>
+    <li class="fragment">Shorter instructions are better</li>
+    <li class="fragment">Shorter solutions are easier to understand
+      <ul>
+	<li class="fragment">Use projects for long-form solutions</li>
+      </ul>
+    </li>
+    <li class="fragment">So use Tab and Bullet exercises for multi-step exercises
+      <ul>
+	<li class="fragment">Explicit sub-goals improve learning</li>
+	<li class="fragment">Words like "then" and "next" signal natural breaks</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Further Reading</h3>
+  <div align="center">
+    <p><img src="img/myths.jpg" width="25%" /></p>
+    <p><a href="https://www.amazon.com/Urban-Myths-about-Learning-Education/dp/0128015373/"><em>Urban Myths about Learning and Education</em></a></p>
+  </div>
+</section>
+
+<section>
+  <h3>What We Just Did</h3>
+  <ol>
+    <li class="fragment">Outlined guidelines for course content</li>
+    <li class="fragment">Included rationale and examples to make guidelines believable
+      <ul>
+	<li class="fragment">Because that's a good teaching practice</li>
+      </ul>
+    </li>
+    <li class="fragment">Many of these checks will be automated</li>
+    <li class="fragment">Remember Orwell's Sixth Rule</li>
+    <div align="center" class="fragment">
+      <p>Next: <a href="./course-handoff.html">Course Handoff</a></p>
+    </div>
+  </ol>
+</section>

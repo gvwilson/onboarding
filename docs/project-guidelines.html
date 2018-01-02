@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instructor Onboarding: Project Guidelines</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/datacamp.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      .reveal section img {
+        border: 0px;
+      }
+      section {
+        text-align: left;
+      }
+      .reveal pre {
+        box-shadow: none;
+        padding-left: 1em;
+        border-left: solid;
+        border-color: gray;
+      }
+    </style>
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="titleslide">
+          <div align="center">
+            <h2>Instructor Onboarding:<br/>Project Guidelines</h2>
+            <p><a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a></p>
+            <p style="font-size:75%">Version 0.1</p>
+	    <p style="font-size:75%">See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation</p>
+            <p><img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="150"/></p>
+          </div>
+	</section>
+
+<section>
+  <h3>Overview</h3>
+  <ol>
+    <li class="fragment">Consistency reduces friction when learning</li>
+    <li class="fragment">We want to implement good teaching practices</li>
+    <li class="fragment">Our data tells us how to make online material more engaging</li>
+  </ol>
+</section>
+
+<section>
+  <h3>Orwell's Rules</h3>
+  <ol>
+    <li>Never use a metaphor, simile or other figure of speech which you are used to seeing in print.</li>
+    <li>Never use a long word where a short one will do.</li>
+    <li>If it is possible to cut a word out, always cut it out.</li>
+    <li>Never use the passive where you can use the active.</li>
+    <li>Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.</li>
+    <li>Break any of these rules sooner than say anything barbarous.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>Context</h3>
+  <ul>
+    <li class="fragment">30-800 characters (5-130 words)</li>
+    <li class="fragment">1-3 paragraphs</li>
+    <li class="fragment">Inclusive voice
+      <ul>
+	<li class="fragment">We are doing this together</li>
+	<li class="fragment">"Let's removed <code>Survived</code> from the dataset."</li>
+      </ul>
+    </li>
+    <li class="fragment">Avoid exclamation marks!!
+      <ul>
+	<li class="fragment">And remember that most jokes aren't funny the second time around</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Instructions</h3>
+  <ul>
+    <li class="fragment">Opening paragraph: 60-180 characters (10-30 words)</li>
+    <li class="fragment">Then 1-4 items totalling at most 600 characters (100 words)</li>
+    <li class="fragment">Less detailed than in a course
+      <ul>
+	<li class="fragment">Meant to <em>remind</em> rather than <em>instruct</em></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Good Instructions</h3>
+  <ul>
+    <li class="fragment">State the objective of the task
+      <ul>
+	<li class="fragment">"Create a dataframe called <code>df</code> containing 50 points on a circle and plot it."</li>
+	<li class="fragment">Specify variable names to simplify checks</li>
+      </ul>
+    </li>
+    <li class="fragment">Make sub-goals explicit
+      <ul>
+	<li class="fragment">"Create a vector of 50 angles from 0 to 2&pi; radians."</li>
+	<li class="fragment">"Display a scatterplot using <code>ggplot2</code>."</li>
+      </ul>
+    </li>
+    <li class="fragment">Make acceptance criteria very clear
+      <ul>
+	<li class="fragment">False negatives are extremely frustrating</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Starter Code</h3>
+  <ul>
+    <li class="fragment">Also less detailed than in a course</li>
+    <li class="fragment">Use the imperative voice in comments</li>
+    <li class="fragment">Wrong:
+<pre>
+# This sets plots to a nice size.
+options(repr.plot.width = 4)
+
+# This loads the ggplot2 library.
+library(ggplot2)
+</pre>
+    </li>
+    <li class="fragment">Right:
+<pre width="100%">
+# Customize plot width.
+options(repr.plot.width = 4)
+
+# Load ggplot2.
+library(ggplot2)
+</pre>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Hints</h3>
+  <ul>
+    <li class="fragment">No more than 800 characters (130 words)
+      <ul>
+	<li class="fragment">Preferably much less</li>
+      </ul>
+    </li>
+    <li class="fragment">May include scaffolded code</li>
+    <li class="fragment">"Assemble the data frame <code>df</code> using<br/><code>data.frame(t = t, x = sin(t), ___)</code>"</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Solutions</h3>
+  <ul>
+    <li class="fragment">1-10 lines</li>
+    <li class="fragment">Should run in 5 seconds or less on a regular laptop</li>
+    <li class="fragment">
+      So add datasets to the Docker image with <code>requirements.sh</code>
+      unless it's completely impractical
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>What We Just Did</h3>
+  <ol>
+    <li class="fragment">Outlined guidelines for project content</li>
+    <li class="fragment">Included rationale and examples to make guidelines believable
+      <ul>
+	<li class="fragment">Because that's a good teaching practice</li>
+      </ul>
+    </li>
+    <li class="fragment">Many of these checks will be automated</li>
+    <li class="fragment">Remember Orwell's Sixth Rule</li>
+  </ol>
+</section>
+	
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        history: true,
+        center: false,
+        slideNumber: true,
+        transition: "none",
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

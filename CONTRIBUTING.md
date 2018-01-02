@@ -3,7 +3,7 @@ permalink: contributing.html
 ---
 # Contributing
 
-[DataCamp](https://www.datacamp.com/) welcomes bug reports, feature requests, and fixes. By contributing to this lesson, you agree that we may redistribute your work under [our license](LICENSE.md). In exchange, we will address your issues and/or assess your proposed changes as promptly as we can.
+[DataCamp](https://www.datacamp.com/) welcomes bug reports, feature requests, and fixes. By contributing to this lesson, you agree that we may redistribute your work under [our license](./license.html). In exchange, we will address your issues and/or assess your proposed changes as promptly as we can.
 
 The easiest way to get started is to file an issue to tell us about a spelling mistake, some awkward wording, or a factual error.
 
@@ -13,4 +13,4 @@ The easiest way to get started is to file an issue to tell us about a spelling m
 
 3.  We also welcome comments by email, but will be able to respond more quickly if you use one of the other methods described above.
 
-The repository for this lesson is <https://github.com/datacamp/courses-intro-to-unix-shell>.
+The repository for this lesson is <https://github.com/datacamp/courses-teaching-and-learning>.

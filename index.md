@@ -1,21 +1,32 @@
 ---
 ---
-# Teaching and Learning
+# DataCamp Instructor Onboarding
 
--   [From Novice to Competent](./novice.html)
--   [Memory and Cognition](./memory.html)
--   [Motivation](./motivation.html)
+<a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a>
 
-----
+Version {{site.version}} built {{ site.time | date_to_rfc822 }}
 
--   [Designing a Course](./course-design.html)
--   [Course Exercises](./course-exercises.html)
--   [Building a Course](./course-build.html)
--   *[Creating a Project](./project.html) (to be done)*
+See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation
 
-----
+-   Before You Write Your Spec
+    -   [From Novice to Competent](./novice.html)
+    -   [Memory and Cognition](./memory.html)
+    -   [Motivation](./motivation.html)
+    -   [Designing a Course](./course-design.html)
+    -   [Course Exercises](./course-exercises.html)
+-   Before You Implement Your Course
+    -   [Building a Course](./course-build.html)
+    -   [The Course Editor](./course-editor.html)
+    -   [Course Guidelines](./course-guidelines.html)
+    -   [Course Handoff](./course-handoff.html)
+    -   [Course Tips](./course-tips.html)
+-   But Wait, I'm Building a Project
+    -   [Creating a Project](./project.html)
+    -   [Project Guidelines](./project-guidelines.html)
+-   Supporting Documents
+    -   [Design of this Material](./design.html)
+    -   [License](./license.html)
+    -   [Contributing](./contributing.html)
+    -   [Citation](./citation.html)
 
--   [Design](./design.html)
--   [License](./license.html)
--   [Contributing](./contributing.html)
--   [Citation](./citation.html)
+<img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="200"/>

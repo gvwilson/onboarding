@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instructor Onboarding: Course Exercises</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/datacamp.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      .reveal section img {
+        border: 0px;
+      }
+      section {
+        text-align: left;
+      }
+      .reveal pre {
+        box-shadow: none;
+        padding-left: 1em;
+        border-left: solid;
+        border-color: gray;
+      }
+    </style>
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="titleslide">
+          <div align="center">
+            <h2>Instructor Onboarding:<br/>Course Exercises</h2>
+            <p><a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a></p>
+            <p style="font-size:75%">Version 0.1</p>
+	    <p style="font-size:75%">See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation</p>
+            <p><img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="150"/></p>
+          </div>
+	</section>
+
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li class="fragment">
+      Now understand <a href="./novice.html">goals for exercises</a>
+      and <a href="./memory.html">constraints on memory and cognition</a>
+    </li>
+    <li class="fragment">See how different kinds of exercises achieve that</li>
+    <li class="fragment">And how to implement those exercises using our platform</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Requirements</h3>
+  <ol>
+    <li class="fragment">Individual exercises must be short (1-2 minutes)
+      <ul>
+	<li class="fragment">People learn best in small steps</li>
+	<li class="fragment">People drop out if exercises are longer</li>
+      </ul>
+    </li>
+    <li class="fragment">Answers must be automatically gradable
+      <ul>
+	<li class="fragment">Instant feedback is more engaging</li>
+	<li class="fragment">Human inspection doesn't scale affordably</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h3>Engagement</h3>
+  <div align="center" class="fragment">
+    <p><em>Prefer coding exercises over non-coding exercises</em></p>
+  </div>
+  <ul>
+    <li class="fragment">People come to us for hands-on instruction
+      <ul>
+	<li class="fragment">If they wanted a book, they'd buy a book</li>
+      </ul>
+    </li>
+    <li class="fragment">Applying new knowledge right away improves retention
+      <ul>
+	<li class="fragment">Knowledge is more likely to be remembered</li>
+	<li class="fragment">People are more likely to complete the course</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Multiple Choice Question</h3>
+  <ul>
+    <li class="fragment">Short, unambiguous question</li>
+    <li class="fragment">3-5 responses
+      <ul>
+	<li class="fragment">Remember <a href="./course-exercises.html">7±2</a></li>
+      </ul>
+    </li>
+    <li class="fragment">Exercise reasoning and judgment, not just recall</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Multiple Choice Question</h3>
+  <p>What does the following fragment of Python print?</p>
+<pre>
+letters = 'abc'
+for char in letters:
+    print(char)
+    letters.upper()
+</pre>
+  <ol>
+    <li><code>A B C</code><span class="fragment"> (doesn't understand instruction sequencing)</span></li>
+    <li><code>a B C</code><span class="fragment"> (thinks <code>upper</code> mutates its object)</span></li>
+    <li><code>a b c</code><span class="fragment"> (correct answer)</span></li>
+    <li><code>error</code><span class="fragment"> (thinks method results have to be assigned)</span></li>
+  </ol>
+</section>
+
+<section>
+  <h3>Write and Run</h3>
+  <ul>
+    <li class="fragment">Write code that does X
+      <ul>
+	<li class="fragment">But blank screens are intimidating</li>
+      </ul>
+    </li>
+    <li class="fragment">So give learners starter code
+      <ul>
+	<li class="fragment">Makes auto-grading more reliable</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="fragment">
+    <p>
+      Fill in the blanks so that the code below prints the string <code>'hat'</code>.
+    </p>
+<pre>
+text = 'all that it is'
+slice = text[____:____]
+print(slice)
+</pre>
+  </div>
+</section>
+
+<section>
+  <h3>Minimal Changes</h3>
+  <ul>
+    <li class="fragment">Modify code instead of filling in blanks</li>
+  </ul>
+  <div class="fragment">
+  <p>
+    Fix  function so that it tests whether a point <code>(x, y)</code> lies
+    strictly within a rectangle defined by <code>(x_min, y_min, x_max, y_max)</code>.
+  </p>
+<pre>
+def inside(point, rect):
+  if (point.x <= rect.x_min): return false
+  if (point.y <= rect.y_min): return false
+  if (point.x >= rect.y_max): return false
+  if (point.y >= rect.y_max): return false
+  return true
+</pre>
+  </div>
+</section>
+
+<section>
+  <h3>Minimal Changes</h3>
+  <ul>
+    <li class="fragment">Change one variable's initial value</li>
+    <li class="fragment">Swap an inner and outer loop</li>
+    <li class="fragment">Change the order of tests in a chain of conditionals</li>
+    <li class="fragment">Change the nesting of function calls</li>
+    <li class="fragment"><em>Debugging</em></li>
+  </ul>
+</section>
+
+<section>
+  <h3>Finding Bugs</h3>
+  <ul>
+    <li class="fragment">Novices will spend most of their time doing this
+      <ul>
+	<li class="fragment">Just like the rest of us</li>
+      </ul>
+    </li>
+    <li class="fragment">Give students a chance to practice another real-world skill</li>
+    <li class="fragment">Exercise higher-level thinking
+      <ul>
+	<li class="fragment">Reason from effect back to cause</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Finding Bugs</h3>
+  <p>
+    <code>subsum</code> sums each sub-list of strictly increasing
+    numbers: <code>subsum([1, 3, 3, 4, 5, 1])</code>
+    produces <code>[4, 3, 9, 1]</code>. Which bug does it contain?
+  </p>
+  <ol>
+    <li>Every negative number starts a new sub-sequence.</li>
+    <li>First value of each sub-sequence not in sub-sum.</li>
+    <li>Last value of each sub-sequence not in sub-sum.</li>
+    <li>Only re-starts sum when values actually decrease.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>Tracing Execution</h3>
+  <ul>
+    <li class="fragment">Given code, trace order in which lines are executed</li>
+    <li class="fragment">Authentic task (comes up frequently in debugging)</li>
+    <li class="fragment">Can be emulated using multiple choice question
+      <ul>
+	<li class="fragment">Though this does increase cognitive load</li>
+      </ul>
+    </li>
+    <li class="fragment">Can also trace successive values</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Tracing Execution</h3>
+  <p>
+    In what order do the lines in this code execute?
+  </p>
+<pre>
+A)     vals = [-1, 0, 1]
+B)     inverse_sum = 0
+       try:
+            for v in vals:
+C)             inverse_sum += 1/v
+       except:
+D)         pass
+</pre>
+<ol>
+  <li>A, B, C, C, C</li>
+  <li>A, B, C, C, D</li>
+  <li>A, B, C, C, D, C</li>
+</ol>
+</section>
+
+<section>
+  <h3>What We Just Did</h3>
+  <ol>
+    <li class="fragment">Introduced several kinds of exercises</li>
+    <li class="fragment">Showed how simple tools could be repurposed in several ways</li>
+    <li class="fragment">Reinforced the need to exercise higher-level thinking skills</li>
+  </ol>
+  <div align="center" class="fragment">
+    <p>Next: <a href="./course-build.html">Building a Course</a></p>
+  </div>
+</section>
+	
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        history: true,
+        center: false,
+        slideNumber: true,
+        transition: "none",
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

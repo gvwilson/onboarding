@@ -5,27 +5,41 @@ permalink: license.html
 
 Copyright (c) DataCamp 2017.
 
-This work is made available under the terms of the Creative Common Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
-This summary is a human-readable summary of (and not a substitute for) the [full license](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
+This work is made available under the terms of the Creative Commons Attribution-NonCommercial-NoDerivaties 4.0 International (CC-BY-NC-ND 4.0) license.
+This summary is a human-readable summary of (and not a substitute for) the [full license](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode).
 
-## You are free to:
+### You are free to:
 
-* **Share** - copy and redistribute the material in any medium or format.
+-   **Share** — copy and redistribute the material in any medium or format.
+    The licensor cannot revoke these freedoms as long as you follow the
+    license terms.
 
-* **Adapt** - remix, transform, and build upon the material.
+### Under the following terms:
 
-The licensor cannot revoke these freedoms as long as you follow the license terms.
+-   **Attribution** —
+    You must give appropriate credit,
+    provide a link to the license, and indicate if changes were made.
+    You may do so in any reasonable manner,
+    but not in any way that suggests the licensor endorses you or your use.
 
-## Under the following terms:
+-   **NonCommercial** —
+    You may not use the material for commercial purposes.
 
-* **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+-   **NoDerivatives** —
+    If you remix, transform, or build upon the material,
+    you may not distribute the modified material.
 
-* **NonCommercial** - You may not use the material for commercial purposes.
+-   **No additional restrictions** —
+    You may not apply legal terms or technological measures
+    that legally restrict others from doing anything the license permits.
 
-**No additional restrictions** - You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+### Notices:
 
-## Notices:
+-   You do not have to comply with the license for elements of the material in the public domain
+    or where your use is permitted by an applicable exception or limitation.
 
-You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
-
-No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+-   No warranties are given.
+    The license may not give you all of the permissions necessary for your intended use.
+    For example,
+    other rights such as publicity, privacy, or moral rights
+    may limit how you use the material.
