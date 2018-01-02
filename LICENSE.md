@@ -5,7 +5,7 @@ permalink: license.html
 
 Copyright (c) DataCamp 2017.
 
-This work is made available under the terms of the Creative Common Attribution-NonCommercial-NoDerivaties 4.0 International (CC BY-NC-ND 4.0) license.
+This work is made available under the terms of the Creative Commons Attribution-NonCommercial-NoDerivaties 4.0 International (CC-BY-NC-ND 4.0) license.
 This summary is a human-readable summary of (and not a substitute for) the [full license](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode).
 
 ### You are free to:

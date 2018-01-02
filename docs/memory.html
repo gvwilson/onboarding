@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instructor Onboarding: Memory and Cognition</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/datacamp.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      .reveal section img {
+        border: 0px;
+      }
+      section {
+        text-align: left;
+      }
+      .reveal pre {
+        box-shadow: none;
+        padding-left: 1em;
+        border-left: solid;
+        border-color: gray;
+      }
+    </style>
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="titleslide">
+          <div align="center">
+            <h2>Instructor Onboarding:<br/>Memory and Cognition</h2>
+            <p><a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a></p>
+            <p style="font-size:75%">Version 0.1</p>
+	    <p style="font-size:75%">See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation</p>
+            <p><img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="150"/></p>
+          </div>
+	</section>
+
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li class="fragment">
+      A <a href="./novice.html"><em>novice</em></a> doesn't (yet) have a mental model of the problem domain
+    </li>
+    <li class="fragment">
+      A <em>competent practitioner</em> can succeed at normal tasks under normal circumstances with normal effort
+      <ul>
+	<li class="fragment">For example, bike to work or make dinner</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      Look at what distinguishes an <em>expert</em>
+      in order to see how to design lessons that work for people at all levels
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Characteristics of Experts</h3>
+  <ul>
+    <li class="fragment">Solve common problems "instantly"</li>
+    <li class="fragment">Able to solve unusual problems as well</li>
+    <li class="fragment">Able to reason backward from effect to cause</li>
+  </ul>
+  <p class="fragment">But:</p>
+  <ul>
+    <li class="fragment">Sometimes unable to explain their reasoning</li>
+    <li class="fragment">Often mis-use words like "simple" or "obvious"</li>
+  </ul>
+</section>
+
+<section>
+  <h3>A Mental Model of Expertise</h3>
+  <ul>
+    <li class="fragment">Knowledge isn't stored as a graph, but it's a useful model</li>
+    <li class="fragment">Expert's graph is much more densely connected</li>
+    <li class="fragment">So experts can reach solutions in one step instead of many
+      <ul>
+	<li class="fragment">With much less backtracking</li>
+      </ul>
+    </li>
+  </ul>
+  <div align="center">
+    <img class="fragment" src="img/search.svg" alt="Competent vs. Expert Search" />
+  </div>
+</section>
+
+<section>
+  <h3>You Are Not Your Learners</h3>
+  <ul>
+    <li class="fragment">Experts recognize solutions instead of constructing them</li>
+    <li class="fragment">Can't explain their method because there wasn't one</li>
+    <li class="fragment">The best teacher is someone who mastered the topic recently
+      <ul>
+	<li class="fragment">Because they still remember what it's like to <em>not</em> understand</li>
+      </ul>
+    </li>
+    <li class="fragment">Explicitly itemizing required steps helps overcome expert blind spot</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Concept Maps</h3>
+  <ul>
+    <li class="fragment">A picture of a mental model</li>
+  </ul>
+  <p align="center" class="fragment">
+    <img src="img/concept.svg" alt="Concept Map" width="100%" />
+  </p>
+  <ul>
+    <li class="fragment">Emphasize connections just as much as concepts</li>
+    <li class="fragment">Knowledge that cannot be retrieved cannot be used</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Human Memory Hierarchy</h3>
+  <ul>
+    <li class="fragment">Sensory memory: 1-2 seconds</li>
+    <li class="fragment">Short-term memory: 7±2 items for 10-15 seconds</li>
+    <li class="fragment">Long-term memory: permanent storage
+      <ul>
+	<li class="fragment">But frequently rewritten</li>
+      </ul>
+    </li>
+    <li class="fragment">Learning is the act of transferring new information to long-term memory</li>
+    <li class="fragment">But new information initially goes into short-term memory</li>
+    <li class="fragment">
+      If we give learners too much too fast,
+      it spills out of short-term memory and learning doesn't occur
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Lesson Size</h3>
+  <ul>
+    <li class="fragment">
+      Count the nodes and edges in the concept map
+      <ul>
+	<li class="fragment">Or keywords in a point-form outline <em>that enumerates connections</em></li>
+      </ul>
+    </li>
+    <div class="fragment" align="center" class="fragment">
+      <img src="img/concept.svg" alt="Concept Map" width="100%" />
+    </div>
+    <li class="fragment">Each learning episode should be at most half a dozen items</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Reinforcement</h3>
+  <ul>
+    <li class="fragment">
+      Transference is more likely if new information is <em>reinforced</em>
+      to keep it in short-term memory
+    </li>
+    <li class="fragment">
+      Good: explain it again in a different way
+    </li>
+    <li class="fragment">
+      Better: have learners use it
+      <ul>
+	<li class="fragment">Which also checks that they understood it the first time</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      Music and athletics:
+      instructor and learner alternate every 30-60 seconds
+    </li>
+    <li class="fragment">
+      Try to achieve this with code
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Retrieval</h3>
+  <ul>
+    <li class="fragment">"Memory is the residue of thought." - Willingham</li>
+    <li class="fragment">No point storing information if we can't retrieve it</li>
+    <li class="fragment">Retrieval improves with practice
+      <ul>
+        <li class="fragment">Quizzes and flash cards significantly outperform repeated study</li>
+      </ul>
+    </li>
+    <li class="fragment">(Mostly) domain-specific
+      <ul>
+        <li class="fragment">Little evidence for "far transference"</li>
+        <li class="fragment">I.e., improvements in one domain don't generally produce improvements in others</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Cognitive Load</h3>
+  <ul>
+    <li class="fragment">
+      Different parts of problem solving compete for processing time
+      <ul>
+	<li class="fragment">Recall vs. planning</li>
+      </ul>
+    </li>
+    <li class="fragment">Good lessons let learners concentrate on one aspect of a problem at a time</li>
+    <li class="fragment">Example: Parsons Problems
+      <ul>
+	<li class="fragment">Rearrange jumbled lines of code to solve a problem</li>
+	<li class="fragment">Allows learner to concentrate on data flow instead of vocabulary</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Faded Examples</h3>
+  <ul>
+    <li class="fragment">A succession of closely-related problems</li>
+    <li class="fragment">Each gives the learner less <em>scaffolding</em></li>
+    <li class="fragment">Parts that are removed are closely related</li>
+    <li class="fragment">Learners focus on one aspect of the problem at a time
+      <ul>
+	<li class="fragment">And learn the underlying pattern by example</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Step 1: Fully-Worked Example</h3>
+  <ul>
+    <li>Go through this line by line</li>
+  </ul>
+  <pre class="sample">
+    # ["red", "green", "blue"] => 12
+    def total_length(words):
+    total = 0
+    for word in words:
+    total += len(word)
+    return total
+  </pre>
+</section>
+
+<section>
+  <h3>First Exercise</h3>
+  <ul>
+    <li>Direct attention to initialization and update</li>
+  </ul>
+  <pre class="sample">
+    # ["red", "green", "blue"] => [3, 5, 4]
+    def all_lengths(words):
+    lengths = ____
+    for word in words:
+    lengths ____
+    return lengths
+  </pre>
+</section>
+
+<section>
+  <h3>Second Exercise</h3>
+  <ul>
+    <li>Direct attention to control flow</li>
+  </ul>
+  <pre class="sample">
+    # ["red", "green", "blue"] => "redgreenblue"
+    def join(words):
+    result = ____
+    for ____ in ____:
+    ____
+    return result
+  </pre>
+</section>
+
+<section>
+  <h3>Final Exercise</h3>
+  <ul>
+    <li>Put the pieces together</li>
+  </ul>
+  <pre class="sample">
+    # ["red", "green", "blue"] => "RGB"
+    def acronym(words):
+    ____
+    ____
+    ____
+    ____
+  </pre>
+  <ul>
+    <li class="fragment">Learners do <em>more</em> total work…</li>
+    <li class="fragment">…in <em>less</em> total time</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Chunking</h3>
+  <ul>
+    <li class="fragment">
+      Items that frequently occur together are stored in <em>chunks</em>
+      that only take up one slot in short-term memory
+      <ul>
+	<li class="fragment">The digits in frequently-used phone numbers</li>
+	<li class="fragment">Common chord progressions</li>
+      </ul>
+    </li>
+    <li class="fragment">Chunking lets us work with larger information sets
+      <ul>
+	<li class="fragment">At the risk of mis-categorizing items</li>
+      </ul>
+    </li>
+    <li class="fragment">Good lessons give chunks names
+      <ul>
+	<li class="fragment">"Flag"</li>
+	<li class="fragment">"Best value seen so far"</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Further Reading</h3>
+  <div align="center">
+    <p>
+      <a href="http://www.learningscientists.org/spaced-practice"><img src="img/learning-scientists-spaced.jpg" alt="Spaced Practice" width="20%" /></a>
+      <a href="http://www.learningscientists.org/retrieval-practice"><img src="img/learning-scientists-retrieval.jpg" alt="Retrieval Practice" width="20%" /></a>
+      <a href="http://www.learningscientists.org/elaboration"><img src="img/learning-scientists-elaboration.jpg" alt="Elaboration" width="20%" /></a>
+    </p>
+    <p>
+      <a href="http://www.learningscientists.org/interleaving"><img src="img/learning-scientists-interleaving.jpg" alt="Interleaving" width="20%" /></a>
+      <a href="http://www.learningscientists.org/concrete-examples"><img src="img/learning-scientists-concrete.jpg" alt="Concrete Examples" width="20%" /></a>
+      <a href="http://www.learningscientists.org/dual-coding"><img src="img/learning-scientists-coding.jpg" alt="Dual Coding" width="20%" /></a>
+    </p>    
+    <p><a href="http://www.learningscientists.org/">The Learning Scientists</a></p>
+  </div>
+</section>
+
+<section>
+  <h3>What We Just Did</h3>
+  <ol>
+    <li class="fragment">Extended your mental model of cognition</li>
+    <li class="fragment">Introduced some jargon without forward references
+      <ul>
+	<li class="fragment">Because each forward reference uses up a slot in short-term memory</li>
+      </ul>
+    </li>
+    <li class="fragment">Gave you concrete guidelines for sizing and sequencing exercises</li>
+  </ol>
+  <div align="center" class="fragment">
+    <p>Next: <a href="./motivation.html">Motivation</a></p>
+  </div>
+</section>
+	
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        history: true,
+        center: false,
+        slideNumber: true,
+        transition: "none",
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
