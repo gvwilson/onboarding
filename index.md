@@ -8,19 +8,19 @@ Version {{site.version}} built {{ site.time | date_to_rfc822 }}
 
 See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation
 
--   Theory
+-   Before You Write Your Spec
     -   [From Novice to Competent](./novice.html)
     -   [Memory and Cognition](./memory.html)
     -   [Motivation](./motivation.html)
--   Courses
     -   [Designing a Course](./course-design.html)
     -   [Course Exercises](./course-exercises.html)
+-   Before You Implement Your Course
     -   [Building a Course](./course-build.html)
     -   [The Course Editor](./course-editor.html)
     -   [Course Guidelines](./course-guidelines.html)
     -   [Course Handoff](./course-handoff.html)
     -   [Course Tips](./course-tips.html)
--   Projects
+-   But Wait, I'm Building a Project
     -   [Creating a Project](./project.html)
     -   [Project Guidelines](./project-guidelines.html)
 -   Supporting Documents
