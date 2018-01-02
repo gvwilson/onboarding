@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instructor Onboarding: Course Tips</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/datacamp.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      .reveal section img {
+        border: 0px;
+      }
+      section {
+        text-align: left;
+      }
+      .reveal pre {
+        box-shadow: none;
+        padding-left: 1em;
+        border-left: solid;
+        border-color: gray;
+      }
+    </style>
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="titleslide">
+          <div align="center">
+            <h2>Instructor Onboarding:<br/>Course Tips</h2>
+            <p><a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a></p>
+            <p style="font-size:75%">Version 0.1</p>
+	    <p style="font-size:75%">See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation</p>
+            <p><img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="150"/></p>
+          </div>
+	</section>
+
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li class="fragment">Even with good will on all sides, things will go wrong</li>
+    <li class="fragment">
+      Some problems come up more often than others,
+      so we have advice on how to avoid them
+    </li>
+    <li class="fragment">And a process for addressing them when they haven't been avoided</li>
+  </ul>
+</section>
+
+<section>
+  <h3>The Audience</h3>
+  <ul>
+    <li class="fragment">You know your content</li>
+    <li class="fragment">We know our audience</li>
+    <li class="fragment">If we say that an approach isn't going to work for our users, trust us
+      <ul>
+        <li class="fragment">We won't try to make extra work for anyone</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Too Much Math</h3>
+  <ul>
+    <li class="fragment">We want to teach people how to use code to apply math to real-world problems</li>
+    <li class="fragment">Deriving equations and proving theorems is out of scope
+      <ul>
+        <li class="fragment">And not a fit for our platform</li>
+      </ul>
+    </li>
+    <li class="fragment">This <em>isn't</em> dumbing things down</li>
+    <li class="fragment">It's providing an on-ramp to as wide an audience as possible
+      <ul>
+        <li class="fragment">Soup, then hymns</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Too Much Code</h3>
+  <ul>
+    <li class="fragment">Never more than a few lines at a time
+      <ul>
+	<li class="fragment">Remember <a href="./memory.html">7±2</a></li>
+      </ul>
+    </li>
+    <li class="fragment">Avoid esoteric language features
+      <ul>
+        <li class="fragment">Python <code>for</code> loops can have an <code>else</code> clause</li>
+        <li class="fragment">Most people don't know this</li>
+        <li class="fragment">Those who do usually misremember how it works</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Not Enough of Either</h3>
+  <ul>
+    <li class="fragment">Our users aren't afraid of math or code</li>
+    <li class="fragment">They're just primarily interested in their application</li>
+    <li class="fragment">Work through at least one course similar to yours before starting to write
+      <ul>
+        <li class="fragment">Good musicians listen to each other</li>
+        <li class="fragment">CLs and CDs can recommend ones that are highly rated</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Preaching to Believers</h3>
+  <ul>
+    <li class="fragment">Our users already believe that data science is fun</li>
+    <li class="fragment">They already know it's changing the world</li>
+    <li class="fragment">So you don't need to tell them this</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Teasers</h3>
+  <ul>
+    <li class="fragment">Don't say "it's really important to think about X"
+    <li class="fragment">Their response will (rightly) be, "Think <em>what</em> about X?"</li>
+    <li class="fragment">Similarly, "Make this web site more webbish, but not too webbish" never helped anyone
+      <ul>
+        <li class="fragment">If you can't provide rules, provide examples</li>
+        <li class="fragment">Like the Python <code>for</code>-<code>else</code> example above</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Writer's Block</h3>
+  <ul>
+    <li class="fragment">The first page is the hardest
+      <ul>
+        <li class="fragment">Except for the second</li>
+        <li class="fragment">And the third…</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      Our <a href="./course-design.html">course design process</a>
+      is meant to get you past the worst of this
+    </li>
+    <li class="fragment">When in doubt, talk to your CL</li>
+  </ul>
+  <div align="center" class="fragment">
+    <img src="img/rubber-duck.jpg" style="height:5em" />
+  </div>
+</section>
+
+<section>
+  <h3>Procrastination</h3>
+  <ul>
+    <li class="fragment">We can't write the course for you</li>
+    <li class="fragment">Weekly check-ins are meant to keep you moving</li>
+    <li class="fragment">
+      If it becomes clear that content is never going to materialize,
+      it's better to part ways amicably than drag things out
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Perfectionism</h3>
+  <ul>
+    <li class="fragment">No course will ever be right for everyone</li>
+    <li class="fragment">We will provide guidance and feedback as you work
+      <ul>
+        <li class="fragment">Pace and clarity</li>
+        <li class="fragment">Voice and grammar</li>
+        <li class="fragment">How engaging examples are</li>
+      </ul>
+    </li>
+    <li class="fragment">Soft launch <em>always</em> catches things that authors and CDs didn't expect
+      <ul>
+        <li class="fragment">"No lesson survives first contact with the real world intact."</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Platform Issues</h3>
+  <ul>
+    <li class="fragment">We're constantly trying to improve our tools</li>
+    <li class="fragment">Which means that occasionally things don't work as we'd like</li>
+    <li class="fragment"><em>Please tell us</em> when anything seems off
+      <ul>
+        <li class="fragment">If it's a bug, we'll fix it</li>
+        <li class="fragment">If we can improve the user experience for instructors, we'll add it to our backlog</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>What We Just Did</h3>
+  <ol>
+    <li class="fragment">Enumerated some common pitfalls</li>
+    <li class="fragment">Looked at ways we can address them together</li>
+  </ol>
+  <div align="center" class="fragment">
+    <p>Next: <a href="http://datacamp.com/teach/">Get started!</a></p>
+  </div>
+</section>
+	
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        history: true,
+        center: false,
+        slideNumber: true,
+        transition: "none",
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

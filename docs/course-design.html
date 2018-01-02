@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instructor Onboarding: Designing a Course</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/datacamp.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      .reveal section img {
+        border: 0px;
+      }
+      section {
+        text-align: left;
+      }
+      .reveal pre {
+        box-shadow: none;
+        padding-left: 1em;
+        border-left: solid;
+        border-color: gray;
+      }
+    </style>
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="titleslide">
+          <div align="center">
+            <h2>Instructor Onboarding:<br/>Designing a Course</h2>
+            <p><a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a></p>
+            <p style="font-size:75%">Version 0.1</p>
+	    <p style="font-size:75%">See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation</p>
+            <p><img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="150"/></p>
+          </div>
+	</section>
+
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li class="fragment">
+      Use the ideas we have seen so far as the basis for a repeatable lesson design process
+    </li>
+    <li class="fragment">
+      Described as a sequence, but always iterative in practice
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>1) Brainstorming</h3>
+  <ol>
+    <li>What problems will learners solve?</li>
+    <li>What concepts and techniques will they learn?</li>
+    <li>What tools or data sets will they use?</li>
+    <li>What terms or jargon will you define?</li>
+    <li>What analogies or heuristics will you use?</li>
+    <li>What mistakes or misconceptions do you expect?</li>
+  </ol>
+  <ul>
+    <li class="fragment">Don't need to answer every question</li>
+    <li class="fragment">May pose and answer others</li>
+  </ul>
+  <div class="fragment">
+    <hr/>
+    <ul>
+      <li><em>Deliver: rough scope for the course</em></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>2) Audience</h3>
+  <ul>
+    <li class="fragment">"Beginner" and "expert" mean different things to different people</li>
+    <li class="fragment">
+      Use our <em>learner personas</em> to define:
+      <ul>
+	<li class="fragment">who you are helping</li>
+	<li class="fragment">what <em>they</em> think they will get out of the course</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="fragment">
+    <hr/>
+    <ul>
+      <li><em>Deliver: brief summary of who your course will help and how</em></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>Example Persona</h3>
+  <img src="img/sindhu.png" alt="Sindhu" />
+  <ul>
+    <li class="fragment">Sindhu, 28, lives in Bangalore</li>
+    <li class="fragment">BSc in Biochemistry, MSc in Pharmacy</li>
+    <li class="fragment">Vaccine researcher at a pharmaceutical company</li>
+    <li class="fragment">Did two courses in statistics with Excel and SPSS</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Example Persona</h3>
+  <img src="img/sindhu.png" alt="Sindhu" />
+  <ul>
+    <li class="fragment">Wants better data science skills to help her advance in her current career</li>
+    <li class="fragment">Not sure which languages or skills to start with</li>
+    <li class="fragment">Likes things she can do on her commute</li>
+  </ul>
+</section>
+
+<section>
+  <h3>3) Activities</h3>
+  <ul>
+    <li class="fragment">Best way to specify content is to design exercises
+      <ul>
+	<li class="fragment">More concrete than "explain residual calculation"</li>
+	<li class="fragment">Reveals dependencies and technical requirements</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      Each exercise should be:
+      <ul>
+	<li class="fragment">One or two bullet points to explain its purpose</li>
+	<li class="fragment">Fully worked out code or solution</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      The teaching equivalent of
+      <a href="https://en.wikipedia.org/wiki/Test-driven_development">test-driven development</a>
+    </li>
+  </ul>
+  <div class="fragment">
+    <hr/>
+    <ul>
+      <li><em>Deliver: 3-4 exercises per hour of student time</em></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>What to Include in the Design</h3>
+  <ul>
+    <li class="fragment">How will learners first encounter each key concept?</li>
+    <li class="fragment">What is the hardest thing learners will do?</li>
+    <li class="fragment">Is every key technical requirement exercised?</li>
+    <li class="fragment">Remember, this stage is design, not implementation</li>
+  </ul>
+</section>
+
+<section>
+  <h3>4) Sequencing</h3>
+  <ul>
+    <li class="fragment">Put exercises in logical order</li>
+    <li class="fragment">Derive course outline from them</li>
+    <li class="fragment">And make notes about the gaps you've just noticed…</li>
+  </ul>
+  <div class="fragment">
+    <hr/>
+    <ul>
+      <li><em>Deliver: course outline (10-12 bullet points per hour)</em></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>5) Description</h3>
+  <ul>
+    <li class="fragment">Summarize everything you have created <em>from the learner's point of view</em></li>
+  </ul>
+  <ol>
+    <li class="fragment">A one-paragraph description</li>
+    <li class="fragment">Half a dozen learning objectives</li>
+    <li class="fragment">A summary of prerequisites</li>
+  </ol>
+  <div class="fragment">
+    <hr/>
+    <ul>
+      <li><em>Deliver: all of the above</em></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>Further Reading</h3>
+  <div align="center">
+    <p><img src="img/lang-cheating.jpg" width="25%" /></p>
+    <p><a href="https://www.amazon.com/Cheating-Lessons-Learning-Academic-Dishonesty/dp/0674724631/"><em>Cheating Lessons</em></a></p>
+  </div>
+</section>
+
+<section>
+  <h3>What We Just Did</h3>
+  <ol>
+    <li class="fragment">Described a five-step course design process</li>
+    <li class="fragment">Explained check-ins at each point</li>
+    <li class="fragment">Emphasized that the process is always iterative in practice</li>
+  </ol>
+  <div align="center" class="fragment">
+    <p>Next: <a href="./course-exercises.html">Course Exercises</a></p>
+  </div>
+</section>
+	
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        history: true,
+        center: false,
+        slideNumber: true,
+        transition: "none",
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
