@@ -157,16 +157,13 @@ print(slice)
   </ul>
   <div class="fragment">
   <p>
-    Fix  function so that it tests whether a point <code>(x, y)</code> lies
-    strictly within a rectangle defined by <code>(x_min, y_min, x_max, y_max)</code>.
+    Fix the plot so that the color of all points is blue instead of being colored based on the values of `class`.
   </p>
 <pre>
-def inside(point, rect):
-  if (point.x <= rect.x_min): return false
-  if (point.y <= rect.y_min): return false
-  if (point.x >= rect.y_max): return false
-  if (point.y >= rect.y_max): return false
-  return true
+library(ggplot2)
+
+ggplot(mpg, aes(displ, hwy, color = class)) + 
+  geom_point()
 </pre>
   </div>
 </section>
@@ -174,11 +171,10 @@ def inside(point, rect):
 <section>
   <h3>Minimal Changes</h3>
   <ul>
-    <li class="fragment">Change one variable's initial value</li>
-    <li class="fragment">Swap an inner and outer loop</li>
-    <li class="fragment">Change the order of tests in a chain of conditionals</li>
-    <li class="fragment">Change the nesting of function calls</li>
-    <li class="fragment"><em>Debugging</em></li>
+    <li class="fragment">Correct a variable's initial value</li>
+    <li class="fragment">Fix the bounds used to select a range of data</li>
+    <li class="fragment">Fix the criteria used to select a subset of data</li>
+    <li class="fragment">Replace a loop with a vectorized expression</li>
   </ul>
 </section>
 
