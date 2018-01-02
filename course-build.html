@@ -74,17 +74,21 @@ title: Building a Course
 <section>
   <h3>The Build Process</h3>
   <ul>
-    <li class="fragment">Use multiple branches in one repository instead of forking repositories</li>
-    <li class="fragment">First build in a branch assigns a unique numeric ID to that branch of that course
+    <li class="fragment">Course always deployed from <code>master</code></li>
+    <li class="fragment">Do development in other branches and create PRs for review
+      <ul>
+        <li class="fragment">Use multiple branches in one repository instead of forking repositories</li>
+      </ul>
+    </li>
+    <li class="fragment">First build in a branch gives it a numeric ID
       <ul>
 	<li class="fragment">Displayed in the build log</li>
 	<li class="fragment">Then used in dashboard, dataset URLs, etc.</li>
+        <li class="fragment">
+          When merging branches into <code>master</code>,
+          be sure to leave the right ID in requirements script
+        </li>
       </ul>
-    </li>
-    <li class="fragment">Course always deployed from <code>master</code></li>
-    <li class="fragment">
-      When merging branches into <code>master</code>,
-      be sure to leave the right ID in requirements script
     </li>
   </ul>
 </section>
