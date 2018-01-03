@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instructor Onboarding: Homework</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/datacamp.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      .reveal section img {
+        border: 0px;
+      }
+      section {
+        text-align: left;
+      }
+      .reveal pre {
+        box-shadow: none;
+        padding-left: 1em;
+        border-left: solid;
+        border-color: gray;
+      }
+    </style>
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="titleslide">
+          <div align="center">
+            <h2>Instructor Onboarding:<br/>Homework</h2>
+            <p><a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a></p>
+            <p style="font-size:75%">Version 0.1</p>
+	    <p style="font-size:75%">See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation</p>
+            <p><img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="150"/></p>
+          </div>
+	</section>
+
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li>
+      Four short exercises to reinforce what you have just learned
+      and spark discussion
+    </li>
+    <li>
+      Please do <em>before</em> coming to the live discussion
+    </li>
+    <li>
+      Share by submitting a PR to your session's GitHub repository
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>1. Multiple Choice Question</h3>
+  <p>
+    Create a multiple-choice question that tests understanding of one
+    of the concepts you intend to cover in your course.  Include the
+    correct answer and 2-3 incorrect answers, along with an
+    explanation of the misconception each incorrect answer is intended
+    to diagnose.
+  </p>
+</section>
+
+<section>
+  <h3>2. Concept Map</h3>
+  <p>
+    Create a concept map for one of the core concepts you intend to
+    cover in your course. (You can use your favorite digital tool, or
+    draw it freehand and take a picture.) Remember to keep it small,
+    and to label the connections between the concepts.
+  </p>
+</section>
+
+<section>
+  <h3>3. Debugging Exercise</h3>
+  <p>
+    Write a brief description of a debugging problem you might have
+    learners solve during your course.  Include a description of what
+    the code is supposed to do, and 5-10 lines of code
+    that <em>almost</em> do that.
+  </p>
+</section>
+
+<section>
+  <h3>4. Inessential Weirdness</h3>
+  <p>
+    Think about the language features and libraries your learners will
+    use, and the terminology they will encounter.  What do you think
+    will be most confusing or hardest to justify?  (For example, it's
+    often hard to explain to newcomers why Python has both lists and
+    tuples.)
+  </p>
+</section>
+	
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        history: true,
+        center: false,
+        slideNumber: true,
+        transition: "none",
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

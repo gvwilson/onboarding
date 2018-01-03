@@ -14,6 +14,7 @@ See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> 
     -   [Motivation](./motivation.html)
     -   [Designing a Course](./course-design.html)
     -   [Course Exercises](./course-exercises.html)
+    -   [Homework](./spec-homework.html)
 -   Before You Implement Your Course
     -   [Building a Course](./course-build.html)
     -   [The Course Editor](./course-editor.html)
