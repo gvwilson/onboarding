@@ -1,20 +1,31 @@
 Hi ____,
 
 Thanks again for agreeing to build a course for DataCamp.  To help you
-get rolling, we've created a short tutorial on best practices in
+get rolling, we are now offering a short tutorial on best practices in
 course development and how they apply to our platform and learners.
 The tutorial consists of a set of five brief screencasts you can watch
-on your own time and an hour-long discussion session.  Participation
-isn't mandatory, but people who have taken the training I developed
-for Software Carpentry found it interesting as well as useful, and it
-will help you get your course spec written in less time and with less
-fuss.
+on your own time, a few brief exercises, and an hour-long discussion
+session to tie it all together.  Participation isn't mandatory, but
+people who have taken the Software Carpentry instructor training this
+is derived from found it interesting as well as useful, and it will
+help you get your course spec written in less time and with less fuss.
 
-The next discussion session is on Wednesday, January 17 - if you would
-like to take part, please let me know what times during the day would
+The first discussion session will be on Wednesday, January 17. If you
+would like to take part, please let me know when during the day would
 work best for you by filling in http://whenisgood.net/dkxayng, and
-we'll try to find a slot that fits everyone's schedule.  (If you can't
-make that day, there will be another session the following week.)
+we'll try to find a slot that fits everyone's schedule.  If you can't
+make that day, there will be another session in the following week and
+more thereafter, and we will schedule them to accommodate you.
 
-Thanks in advance,
+Since this is a new adventure for us, we would like to record the
+first session for internal use. The recording will only be shared with
+DataCamp staff, and will only be used to help us improve the training.
+If you would rather not be recorded for any reason, you are very
+welcome to opt for the second week's session or a later one (which
+won't be recorded).
+
+If you have any questions or suggestions, please get in touch -
+otherwise, I look forward to seeing you online soon.
+
+Thanks,
 Greg Wilson
