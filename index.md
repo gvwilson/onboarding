@@ -8,6 +8,7 @@ Version {{site.version}}
 
 See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation
 
+-   [Executive Summary](executive-summary.html)
 -   Before You Write Your Spec
     -   [From Novice to Competent](./novice.html)
     -   [Memory and Cognition](./memory.html)
