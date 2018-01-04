@@ -4,9 +4,8 @@
 
 <a href="http://datacamp.com"><img src="img/datacamp.png" alt="DataCamp" width="200" /></a>
 
-Version {{site.version}}
-
-See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> for full documentation
+See <http://authoring.datacamp.com/> for full documentation,
+and <http://github.com/datacamp/instructor-onboarding/> for an executive summary.
 
 1.  [Executive Summary](executive-summary.html)
 2.  Before You Write Your Spec
@@ -30,5 +29,7 @@ See <a href="http://authoring.datacamp.com/">http://authoring.datacamp.com/</a> 
     2.  [License](./license.html)
     3.  [Contributing](./contributing.html)
     4.  [Citation](./citation.html)
+
+Version {{site.version}}.
 
 <img src="img/cc-by-nc-nd.png" alt="CC-BY-NC-ND" width="200"/>
