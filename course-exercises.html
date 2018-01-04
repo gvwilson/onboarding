@@ -52,15 +52,15 @@ title: Course Exercises
 <section>
   <h3>Videos</h3>
   <ul>
-    <li class="fragment">Give students an overview of what the exercises will do in steps</li>
     <li class="fragment">2-4 minutes (400-500 words)</li>
     <li class="fragment">Minimal content on each slide
       <ul>
         <li class="fragment">3 slides instead of 6 bullets on one slide</li>
-        <li class="fragment">Favor images and diagrams over bullets</li>
-        <li class="fragment">And bullets over paragraphs</li>
+        <li class="fragment">Favor diagrams over bullets</li>
+        <li class="fragment">Favor bullets over paragraphs</li>
       </ul>
     </li>
+    <li class="fragment">Should ground concepts in code that walks through relevant examples</li>
   </ul>
 </section>
 
@@ -82,7 +82,28 @@ title: Course Exercises
   <h3>Execution Model</h3>
   <ul>
     <li class="fragment">
-      <em>Pre-exercise code</em> runs silently before the learner is able to run their own code
+      Content Developer (CD) writes <em>Submission Correctness Tests</em> (SCTs)
+      <ul>
+        <li class="fragment">But the instructor writes the messages shown to the learner</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      Also write a solution to be shown to learners who ask for it
+    </li>
+    <li class="fragment">
+      When we build and test the course, the solution must pass the SCTs
+    </li>
+    <li class="fragment">
+      When the learner does the course, we check their code with the same SCTs
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Execution Model</h3>
+  <ul>
+    <li class="fragment">
+      <em>Pre-exercise code</em> runs invisibly before the learner starts work
       <ul>
         <li class="fragment">E.g., read data into a data frame</li>
       </ul>
@@ -93,29 +114,8 @@ title: Course Exercises
         <li class="fragment">Comments labelling steps in solution</li>
         <li class="fragment">Partially-completed code (fill in the blanks)</li>
         <li class="fragment">Jumbled lines of the solutions (Parsons Problem)</li>
-        <li class="fragment">Buggy code to be fixed</li>
+        <li class="fragment">Copy the solution and fade bits out</li>
       </ul>
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h3>Execution Model</h3>
-  <ul>
-    <li class="fragment">
-      Instructor and Content Developer (CD) write <em>Submission Correctness Tests</em> (SCTs)
-      <ul>
-        <li class="fragment">Code to check code</li>
-      </ul>
-    </li>
-    <li class="fragment">
-      Also write a <em>sample solution</em> to be shown to learners who ask for it
-    </li>
-    <li class="fragment">
-      When we build and test the course, the sample solution must pass the SCTs
-    </li>
-    <li class="fragment">
-      When the learner does the course, we check their code with the same SCTs
     </li>
   </ul>
 </section>
