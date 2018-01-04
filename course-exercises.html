@@ -10,13 +10,12 @@ title: Course Exercises
       Now understand <a href="./novice.html">goals for exercises</a>
       and <a href="./memory.html">constraints on memory and cognition</a>
     </li>
-    <li class="fragment">See how different kinds of exercises achieve that</li>
-    <li class="fragment">And how to implement those exercises using our platform</li>
+    <li class="fragment">See how different kinds of exercises on our platform achieve that</li>
   </ul>
 </section>
 
 <section>
-  <h3>Requirements</h3>
+  <h3>Constraints</h3>
   <ol>
     <li class="fragment">Individual exercises must be short (1-2 minutes)
       <ul>
@@ -34,58 +33,124 @@ title: Course Exercises
 </section>
 
 <section>
-  <h3>Engagement</h3>
-  <div align="center" class="fragment">
-    <p><em>Prefer coding exercises over non-coding exercises</em></p>
-  </div>
+  <h3>Lessons</h3>
   <ul>
-    <li class="fragment">People come to us for hands-on instruction
+    <li class="fragment">Basic unit of a course</li>
+    <li class="fragment">One video followed by 2-4 exercises</li>
+    <li class="fragment">Video consists of <em>slides</em> and <em>script</em></li>
+    <li class="fragment">Exercises consist of:
       <ul>
-	<li class="fragment">If they wanted a book, they'd buy a book</li>
-      </ul>
-    </li>
-    <li class="fragment">Applying new knowledge right away improves retention
-      <ul>
-	<li class="fragment">Knowledge is more likely to be remembered</li>
-	<li class="fragment">People are more likely to complete the course</li>
+        <li class="fragment">assignment text</li>
+        <li class="fragment">instructions</li>
+        <li class="fragment">hints</li>
+        <li class="fragment">code (possibly several pieces)</li>
       </ul>
     </li>
   </ul>
 </section>
 
 <section>
-  <h3>Multiple Choice Exercise</h3>
+  <h3>Videos</h3>
   <ul>
+    <li class="fragment">Give students an overview of what the exercises will do in steps</li>
+    <li class="fragment">2-4 minutes (400-500 words)</li>
+    <li class="fragment">Minimal content on each slide
+      <ul>
+        <li class="fragment">3 slides instead of 6 bullets on one slide</li>
+        <li class="fragment">Favor images and diagrams over bullets</li>
+        <li class="fragment">And bullets over paragraphs</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Text</h3>
+  <ul>
+    <li>Assignment text before exercise instructions should be short and sharp
+      <ul>
+        <li class="fragment">Only include text and code relevant to the exercise</li>
+        <li class="fragment">Do <em>not</em> introduce new concepts</li>
+      </ul>
+    </li>
+    <li class="fragment">Instructions should be four or fewer bullets</li>
+    <li class="fragment">Hint should give the learner half of the solution</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Execution Model</h3>
+  <ul>
+    <li class="fragment">
+      <em>Pre-exercise code</em> runs silently before the learner is able to run their own code
+      <ul>
+        <li class="fragment">E.g., read data into a data frame</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      <em>Sample code</em> is put in their console for them to start editing
+      <ul>
+        <li class="fragment">Comments labelling steps in solution</li>
+        <li class="fragment">Partially-completed code (fill in the blanks)</li>
+        <li class="fragment">Jumbled lines of the solutions (Parsons Problem)</li>
+        <li class="fragment">Buggy code to be fixed</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Execution Model</h3>
+  <ul>
+    <li class="fragment">
+      Instructor and Content Developer (CD) write <em>Submission Correctness Tests</em> (SCTs)
+      <ul>
+        <li class="fragment">Code to check code</li>
+      </ul>
+    </li>
+    <li class="fragment">
+      Also write a <em>sample solution</em> to be shown to learners who ask for it
+    </li>
+    <li class="fragment">
+      When we build and test the course, the sample solution must pass the SCTs
+    </li>
+    <li class="fragment">
+      When the learner does the course, we check their code with the same SCTs
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Pure Multiple Choice Exercise</h3>
+  <ul>
+    <li class="fragment">Learner does not write or run code</li>
     <li class="fragment">Short, unambiguous question</li>
     <li class="fragment">3-5 choices
       <ul>
 	<li class="fragment">Remember <a href="./course-exercises.html">7±2</a></li>
-        <li class="fragment">And strive for <a href="./novice.html">diagnostic power</a></li>
+        <li class="fragment">Strive for <a href="./novice.html">diagnostic power</a></li>
       </ul>
     </li>
+    <li class="fragment"><em>Write informative messages for both correct and incorrect responses</em></li>
     <li class="fragment">Exercise reasoning and judgment, not just recall</li>
   </ul>
 </section>
 
 <section>
   <h3>Multiple Choice Exercise</h3>
-  <p>What does the following fragment of Python print?</p>
-<pre>
-letters = 'abc'
-for char in letters:
-    print(char)
-    letters.upper()
-</pre>
-  <ol>
-    <li><code>A B C</code><span class="fragment"> (doesn't understand instruction sequencing)</span></li>
-    <li><code>a B C</code><span class="fragment"> (thinks <code>upper</code> mutates its object)</span></li>
-    <li><code>a b c</code><span class="fragment"> (correct answer)</span></li>
-    <li><code>error</code><span class="fragment"> (thinks method results have to be assigned)</span></li>
-  </ol>
+  <ul>
+    <li class="fragment">Learner gets an interactive console to experiment in before choosing an answer</li>
+    <li class="fragment">But we don't check their code or its output, just their selected answer</li>
+    <li class="fragment">Feedback on incorrect answers should help them figure out what to try next
+      <ul>
+        <li class="fragment">Again, write informative messages for all responses</li>
+      </ul>
+    </li>
+  </ul>
 </section>
 
 <section>
-  <h3>Normal Exercises</h3>
+  <h3>Normal Exercise</h3>
   <ul>
     <li class="fragment">Write code that does X
       <ul>
@@ -94,7 +159,7 @@ for char in letters:
     </li>
     <li class="fragment">So give learners sample code
       <ul>
-	<li class="fragment">Makes auto-grading more reliable</li>
+	<li class="fragment">Also makes auto-grading more reliable</li>
       </ul>
     </li>
   </ul>
@@ -129,38 +194,29 @@ ggplot(mpg, aes(displ, hwy, color = class)) +
 </section>
 
 <section>
-  <h3>Minimal Changes</h3>
-  <ul>
-    <li class="fragment">Correct a variable's initial value</li>
-    <li class="fragment">Fix the bounds used to select a range of data</li>
-    <li class="fragment">Fix the criteria used to select a subset of data</li>
-    <li class="fragment">Replace a loop with a vectorized expression</li>
-  </ul>
-</section>
-
-<section>
-  <h3>Finding Bugs</h3>
+  <h3>Find and Fix Bugs</h3>
   <ul>
     <li class="fragment">Novices will spend most of their time doing this
       <ul>
 	<li class="fragment">Just like the rest of us</li>
       </ul>
     </li>
-    <li class="fragment">Give students a chance to practice another real-world skill</li>
-    <li class="fragment">Exercise higher-level thinking
+    <li class="fragment">Exercises higher-level reasoning
       <ul>
 	<li class="fragment">Reason from effect back to cause</li>
       </ul>
     </li>
+    <li class="fragment">Either a normal exercise or a multiple choice exercise</li>
   </ul>
 </section>
 
 <section>
-  <h3>Finding Bugs</h3>
+  <h3>Find and Fix Bugs</h3>
   <p>
     <code>subsum</code> sums each sub-list of strictly increasing
     numbers: <code>subsum([1, 3, 3, 4, 5, 1])</code>
-    produces <code>[4, 3, 9, 1]</code>. Which bug does it contain?
+    produces <code>[4, 3, 9, 1]</code>. Explore it using using the
+    interactive console–which of these bugs does it contain?
   </p>
   <ol>
     <li>Every negative number starts a new sub-sequence.</li>
@@ -171,38 +227,23 @@ ggplot(mpg, aes(displ, hwy, color = class)) +
 </section>
 
 <section>
-  <h3>Tracing Execution</h3>
+  <h3>Engagement</h3>
+  <div align="center" class="fragment">
+    <p><em>Prefer coding exercises over non-coding exercises</em></p>
+  </div>
   <ul>
-    <li class="fragment">Given code, trace order in which lines are executed</li>
-    <li class="fragment">Authentic task (comes up frequently in debugging)</li>
-    <li class="fragment">Can be emulated using multiple choice exercise
+    <li class="fragment">People come to us for hands-on instruction
       <ul>
-	<li class="fragment">Though this does increase cognitive load</li>
+	<li class="fragment">If they wanted a book, they'd buy a book</li>
       </ul>
     </li>
-    <li class="fragment">Can also trace successive values</li>
+    <li class="fragment">Applying new knowledge right away improves retention
+      <ul>
+	<li class="fragment">Knowledge is more likely to be remembered</li>
+	<li class="fragment">People are more likely to complete the course</li>
+      </ul>
+    </li>
   </ul>
-</section>
-
-<section>
-  <h3>Tracing Execution</h3>
-  <p>
-    In what order do the lines in this code execute?
-  </p>
-<pre>
-A)     vals = [-1, 0, 1]
-B)     inverse_sum = 0
-       try:
-            for v in vals:
-C)             inverse_sum += 1/v
-       except:
-D)         pass
-</pre>
-<ol>
-  <li>A, B, C, C, C</li>
-  <li>A, B, C, C, D</li>
-  <li>A, B, C, C, D, C</li>
-</ol>
 </section>
 
 <section>
