@@ -1,28 +1,25 @@
 Hi ____,
 
-Thanks again for agreeing to build a course for DataCamp.  To help you
-get rolling, we are now offering a short tutorial on best practices in
-course development and how they apply to our platform and learners.
-The tutorial consists of a set of five brief screencasts you can watch
-on your own time, a few brief exercises, and an hour-long discussion
-session to tie it all together.  Participation isn't mandatory, but
-people who have taken the Software Carpentry instructor training this
-is derived from found it interesting as well as useful, and it will
-help you get your course spec written in less time and with less fuss.
+Thanks again for agreeing to build a course for DataCamp.  We are now
+offering a short tutorial on best practices in course development that
+we think will help you build your course in less time and with less
+fuss, and will also be useful with other kinds of presentations and
+teaching.  The tutorial consists of five brief screencasts to watch on
+your own time, four short exercises (three of which you can re-use in
+your course spec), and an hour-long online discussion to tie it all
+together.
 
-The first discussion session will be on Wednesday, January 17. If you
-would like to take part, please let me know when during the day would
-work best for you by filling in http://whenisgood.net/dkxayng, and
-we'll try to find a slot that fits everyone's schedule.  If you can't
-make that day, there will be another session in the following week and
-more thereafter, and we will schedule them to accommodate you.
+The first discussion session will be on Wednesday, January
+17. Participation is completely optional - if you'd like to take part,
+please fill in http://whenisgood.net/dkxayng so we can find a slot
+that fits everyone's schedule.  (If you can't make that day, there
+will be more sessions in the weeks to come.)
 
-Since this is a new adventure for us, we would like to record the
-first session for internal use. The recording will only be shared with
-DataCamp staff, and will only be used to help us improve the training.
-If you would rather not be recorded for any reason, you are very
-welcome to opt for the second week's session or a later one (which
-won't be recorded).
+Since this is a new venture, we'd like to record the first session for
+internal review. The recording will only be shared with DataCamp
+staff, and will only be used to help us improve the training; if you'd
+rather not be recorded for any reason, you are very welcome to opt for
+one of the later sessions (which won't be recorded).
 
 If you have any questions or suggestions, please get in touch -
 otherwise, I look forward to seeing you online soon.
