@@ -4,10 +4,9 @@ Thanks again for agreeing to build a course for DataCamp.  We are now
 offering a short tutorial on best practices in course development that
 we think will help you build your course in less time and with less
 fuss, and will also be useful with other kinds of presentations and
-teaching.  The tutorial consists of five brief screencasts to watch on
-your own time, four short exercises (three of which you can re-use in
-your course spec), and an hour-long online discussion to tie it all
-together.
+teaching.  The tutorial consists of five screencasts to watch on your
+own time (each less than 10 minutes long), four short exercises, and
+an hour-long online discussion to tie it all together.
 
 The first discussion session will be on Wednesday, January
 17. Participation is completely optional - if you'd like to take part,
