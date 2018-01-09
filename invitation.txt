@@ -1,27 +1,12 @@
-Hi ____,
+Hi,
 
-Thanks again for agreeing to build a course for DataCamp.  We are now
-offering a short tutorial on best practices in course development that
-we think will help you build your course in less time and with less
-fuss, and will also be useful with other kinds of presentations and
-teaching.  The tutorial consists of five screencasts to watch on your
-own time (each less than 10 minutes long), four short exercises, and
-an hour-long online discussion to tie it all together.
+Thanks again for agreeing to build a course for DataCamp.  We are now testing a short tutorial on best practices in course development that we think will help you build your course in less time and with less fuss, and will also be useful with other kinds of presentations and teaching.  The tutorial consists of five screencasts to watch on your own time (each about 10 minutes long), four short exercises, and an hour-long online discussion to tie it all together.
 
-The first discussion session will be on Wednesday, January
-17. Participation is completely optional - if you'd like to take part,
-please fill in http://whenisgood.net/dkxayng so we can find a slot
-that fits everyone's schedule.  (If you can't make that day, there
-will be more sessions in the weeks to come.)
+The first discussion session will be on Wednesday, January 17 - if you'd like to take part, please fill in http://whenisgood.net/dkxayng so we can find a slot that fits everyone's schedule. Participation is completely optional, and if you can't make that day, there will be more sessions in the weeks to come.
 
-Since this is a new venture, we'd like to record the first session for
-internal review. The recording will only be shared with DataCamp
-staff, and will only be used to help us improve the training; if you'd
-rather not be recorded for any reason, you are very welcome to opt for
-one of the later sessions (which won't be recorded).
+Since this is a new venture, we'd like to record the first session for internal review. The recording will only be shared with DataCamp staff, and will only be used to help us improve the training; if you'd rather not be recorded for any reason, you are very welcome to opt for one of the later sessions (which won't be recorded).
 
-If you have any questions or suggestions, please get in touch -
-otherwise, I look forward to seeing you online soon.
+If you have any questions or suggestions, please get in touch - otherwise, I look forward to seeing you online soon.
 
 Thanks,
 Greg Wilson
