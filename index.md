@@ -8,12 +8,12 @@ See <http://authoring.datacamp.com/> for full documentation,
 and <http://github.com/datacamp/instructor-onboarding/> for an executive summary.
 
 1.  Before You Write Your Spec
-    1.  [From Novice to Competent](./novice.html)
-    2.  [Memory and Cognition](./memory.html)
-    3.  [Motivation](./motivation.html)
-    4.  [Designing a Course](./course-design.html)
-    5.  [Course Exercises](./course-exercises.html)
-    6.  [Homework](./spec-homework.html)
+    1.  [From Novice to Competent](./novice.html) (09:30)
+    2.  [Memory and Cognition](./memory.html) (11:50)
+    3.  [Motivation](./motivation.html) (11:20)
+    4.  [Designing a Course](./course-design.html) (07:15)
+    5.  [Course Exercises](./course-exercises.html) (09:00)
+    6.  [Homework](./spec-homework.html) (01:45)
 2.  Before You Implement Your Course
     1.  [Building a Course](./course-build.html)
     2.  [The Course Editor](./course-editor.html)
