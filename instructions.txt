@@ -2,7 +2,7 @@ Hi,
 
 Thanks for filling in the calendar invite - if it's still good for you, I'd like to run our session 10-11 am Eastern time on Wednesday January 17. We'll use https://zoom.us/j/4909199458 for the call, which I expect will take about 50 minutes.
 
-As prep, could you please have a look at the short screencasts at https://www.youtube.com/playlist?list=PLjgj6kdf_snbkYNV2Q0Xzkv-DH7bedJIr (the slides for which are in the first section of https://datacamp.github.io/instructor-onboarding/ if you'd like to bookmark the textual version). The final screencast/slide deck has four short homework exercises - I've just shared a Google Doc with you (https://docs.google.com/document/d/1NmyJwDbb4FDVwFNMHLbOXMX2YZ2bYxrlF7u-oLJR3HM/) for collecting answers, and we'll go through that together during the session. If you have any questions or suggestions, please give me a shout - otherwise, I look forward to seeing you next Wednesday.
+As prep, please have a look at the short screencasts at https://www.youtube.com/playlist?list=PLjgj6kdf_snbkYNV2Q0Xzkv-DH7bedJIr (the slides for which are in the first section of https://datacamp.github.io/instructor-onboarding/ if you'd like to bookmark the textual version). The final screencast/slide deck has four short homework exercises - I've just shared a Google Doc with you (https://docs.google.com/document/d/1NmyJwDbb4FDVwFNMHLbOXMX2YZ2bYxrlF7u-oLJR3HM/) for collecting answers, and we'll go through that together during the session. If you have any questions or suggestions, please give me a shout - otherwise, I look forward to seeing you next Wednesday.
 
 Thanks very much,
 Greg
