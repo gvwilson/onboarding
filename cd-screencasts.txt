@@ -1,0 +1,40 @@
+Short Screencasts to Introduce Content Development Topics
+
+(and what does it say that I wrote "convent development" twice?)
+
+Each screencast is meant to be less than a minute long.
+
+- How to log in to Teach
+  - Because the link is hidden down in the bottom with an obscure name
+- What's where in a course home page (just to orient people)
+  - Branch tabs
+  - Home "tab"
+  - Build "tab"
+  - Settings "tab"
+  - "Build Manually" button
+  - "Refresh" link
+  - "Edit" button (end with this to segue into the next video)
+- What's where in the course editor
+  - Overview pane
+  - Edit/Preview pane
+  - Save and sync with GitHub
+  - Mode control (to switch between course editing, slide editing, etc.)
+  - Assets
+- How to get back to the course's page from the Teach editor
+- How to add an exercise using the menu
+  - Also show how to save work at this point
+  - And mention the "sync with GitHub" option
+- How to add an exercise manually
+  - We have to cover copying and pasting Markdown because the current Teach editor doesn't support all exercise types
+  - Where do authors find blank Markdown templates for exercise types?
+- How to edit an exercise
+- How to preview an exercise
+- How to add a new chapter
+- How to view uploaded assets
+- How to upload an asset
+- But I want to work on the command line!
+  - Creating branches (and what those look like in Teach)
+  - Sync'ing with GitHub in Teach
+- How (and why) to build the course manually
+- What's in a build log
+- Settings: building changed chapters vs. building the whole course
