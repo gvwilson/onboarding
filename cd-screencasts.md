@@ -105,7 +105,7 @@
 (start: get into new-look course editor for a dummy course)
 
 - Click on the "Add Chapter" button in the bottom left (click!)
-- Fill in the title and a brief description (type!)
+- Fill in the title and a brief description: both of these will be shown to students doing your course (type!)
 - Click "Create Chapter" (click!)
 - Your new chapter will show up in the pane on the left (wiggle mouse to highlight)
 
