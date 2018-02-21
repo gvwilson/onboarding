@@ -125,7 +125,7 @@
 
 (start: get into the editor for a dummy course)
 
-- "Pure Multiple Choice" exercises ask the learner to pick an option without writing or running any code
+- A "Pure Multiple Choice" exercise asks the learner to pick an option without writing or running any code
 - To create one, click on "Add Exercise" (wiggle mouse then click)
 - Select "Pure Multiple Choice" (click)
 - Fill in the "Assignment" section that sets the background for the exercise and asks the question (type)
@@ -134,6 +134,7 @@
 - Put square brackets around the correct answer (wiggle mouse to highlight)
 - Fill in the "Feedbacks" section with a corresponding point-form list (type)
 - Click the "Save" button at the bottom (wiggle mouse, then click)
+- Click on "Preview" at the bottom to see how your exercise will appear (click!)
 
 ## How can I allow several correct responses to a multiple choice exercise?
 
@@ -143,7 +144,7 @@
 
 (start: get into the editor for a course that has an exercise in its first chapter)
 
-- "Normal" exercises are ones that require the learner to write and run a little bit of code
+- A "Normal" exercise requires the learner to write and run a little bit of code
 - Click on "Add Exercise" (wiggle mouse then click)
 - Choose the "Normal" exercise type (click)
 - Click the pencil icon beside the exercise title (click) and give it a name (type in text and click the button)
@@ -156,6 +157,18 @@
 - Remember that this code is also run when the course is built to check that the SCTs do the right thing
 - Your Content Developer will write the Submission Correctness Test code to check the user's answer, so leave this blank (wiggle mouse)
 - Click the "Save" button at the bottom (wiggle mouse, then click)
+
+## How can I preview a Normal exercise?
+
+(start: get into the editor for the Pure MCQ just created)
+
+- Click on the "Preview" button (wiggle mouse to highlight, then click)
+- A new tab opens up
+- The "Assignment" text shows up under "Exercise" (highlight)
+- The "Instructions" are right below it (highlight)
+- A code console appears on the right (highlight and type)
+- If you go back to the editing tab, you'll see that the "Preview" button is highlighted (wiggle mouse)
+- If you close the Preview tab, the highlighting goes away (click!)
 
 ## What else do I need to know about Normal exercises?
 
