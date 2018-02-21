@@ -68,10 +68,11 @@
 
 ## How do I create a new branch?
 
-(start: launch the Teach editor for a newly-created dummy course)
+(start: launch the Teach editor for a newly-created dummy course that already has two branches called "master" and "specs")
 
 - The tabs at the top of your course page show you what branches are available (wiggle mouse).
 - To create a new branch, click on the plus sign (click!).
+- This will create a new branch derived from whatever branch was selected at the time, so make sure you have the right starting branch selected.
 - Type a name for the new branch into the dialog, then click "Create" (type and click).
 - Please only use letters, digits, and hyphens for branch names.
 
