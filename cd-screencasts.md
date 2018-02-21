@@ -152,6 +152,16 @@
 - Your Content Developer will write the Submission Correctness Test code to check the user's answer, so leave this blank (wiggle mouse)
 - Click the "Save" button at the bottom (wiggle mouse, then click)
 
+## What else do I need to know about Normal exercises?
+
+(start: get into the editor for a course that displays the Normal exercise created above)
+
+- There are a few things you should know about creating Normal exercises
+- First, instructions are written as an unordered list using a dash to start each list item (wiggle mouse to highlight)
+- Second, to write the "Sample Code", you should write the "Solution Code" first, then copy and paste it into the "Sample Code" section and delete bits (scroll up and down to show)
+- Finally, comments have to be identical in both the "Solution Code" and the "Sample Code" (scroll up and down to show)
+- And those comments are not typical code comments: they are an abbreviated version of the exercise instructions (highlight to show)
+
 ## How do I add a Multiple Choice exercise?
 
 (start: get into the editor for a course that has an exercise in its first chapter)
