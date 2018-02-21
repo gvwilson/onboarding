@@ -88,6 +88,9 @@
 ## How do I edit course metadata?
 
 - ?? How do we do this in the new editor ??
+- When the time comes, explain that the title and description will eventually appear on the landing page for the course, so students will see this text
+- When the time comes, tell them that the language has to be written in lower case, but they shouldn't change it: they should ask their CD to do it
+- When the time comes, explain that the "from" field determines which Docker image will be used to build their course: only their CD should change it
 
 ## How do I save my changes?
 
