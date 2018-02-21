@@ -1,3 +1,7 @@
+---
+permalink: cd-screencasts.html
+---
+
 # Short Screencasts to Introduce Content Development Topics
 
 ## How do I log in?

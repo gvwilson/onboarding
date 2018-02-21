@@ -20,16 +20,17 @@ and <http://github.com/datacamp/instructor-onboarding/> for an executive summary
         *Describes the different kinds of exercises you can use in DataCamp courses.*
     6.  [Homework](./spec-homework.html) (01:45)
         *Lays out four brief exercises for you to do before the online discussion.*
-2.  Before You Implement Your Course
+2.  [How to Use the Course Editor](./cd-screencasts.html)
+3.  Before You Implement Your Course
     1.  [Building a Course](./course-build.html)
     2.  [The Course Editor](./course-editor.html)
     3.  [Course Guidelines](./course-guidelines.html)
     4.  [Course Handoff](./course-handoff.html)
     5.  [Course Tips](./course-tips.html)
-3.  But Wait, I'm Building a Project
+4.  But Wait, I'm Building a Project
     1.  [Creating a Project](./project.html)
     2.  [Project Guidelines](./project-guidelines.html)
-4.  Supporting Documents
+5.  Supporting Documents
     1.  [Design of this Material](./design.html)
     2.  [License](./license.html)
     3.  [Contributing](./contributing.html)
