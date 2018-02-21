@@ -125,14 +125,19 @@
 
 (start: get into the editor for a dummy course)
 
-- Click on "Add Exercise" (wiggle mouse then click)
+- "Pure Multiple Choice" exercises ask the learner to pick an option without writing or running any code
+- To create one, click on "Add Exercise" (wiggle mouse then click)
 - Select "Pure Multiple Choice" (click)
 - Fill in the "Assignment" section that sets the background for the exercise and asks the question (type)
 - Fill in the "Hint" section (type)
-- Fill in the "Possible Answers" (type)
+- Fill in the "Possible Answers" with a point-form list of three or four options, using a dash to start each one (type)
 - Put square brackets around the correct answer (wiggle mouse to highlight)
-- Fill in the corresponding list of "Feedbacks"
+- Fill in the "Feedbacks" section with a corresponding point-form list (type)
 - Click the "Save" button at the bottom (wiggle mouse, then click)
+
+## How can I allow several correct responses to a multiple choice exercise?
+
+?? Fill this in once we have an answer ??
 
 ## How do I add a Normal exercise?
 
