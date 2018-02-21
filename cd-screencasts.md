@@ -34,11 +34,13 @@
 
 (start: log in and go to http://datacamp.com/teach)
 
+- If you're building a premium course, DataCamp will create the course for you.
+- But you can also host your own free courses on our platform.
 - Click on the button titled "Create Course" (click!).
-- Fill in the name of the course - we prefer lower case words connected by hyphens (type!).
+- Fill in the name of the course - use lower case words connected by hyphens, with "courses" as the first word (type!).
 - Choose the account that will own the course (click! on the pulldown to display choices, but don't change anything).
 - Make sure the right technology is selected (click! on something that *isn't* initially selected).
-- Don't select "Premium" - if your course is reserved for paying customers, we'll set it up for you.
+- Don't select "Premium": as we said a moment ago, if your course is reserved for paying customers, we'll set it up for you.
 - Then click "Create" (click!).
 - As soon as the course and its GitHub repository have been created, the Teach editor will be launched.
 
