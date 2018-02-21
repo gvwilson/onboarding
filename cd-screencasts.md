@@ -95,6 +95,7 @@
 ## How do I save my changes?
 
 - ?? Show this *after* showing people how to edit course metadata (which means after we figure out how to do that in the new interface) ??
+- Tell them *not* to press "sync" while they are editing, since that will bring in any changes made independently in their GitHub repository
 
 ## How do I synchronize with changes made in a course's GitHub repository?
 
