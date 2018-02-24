@@ -4,7 +4,9 @@ permalink: cd-screencasts.html
 
 # Short Screencasts to Introduce Content Development Topics
 
-## How do I log in?
+## Done
+
+### How do I log in?
 
 (start: log out, and then go to http://datacamp.com)
 
@@ -14,7 +16,7 @@ permalink: cd-screencasts.html
 - Fill in your credentials and click the button.
 - That'll take you to our home page, and you can see your profile image and your current experience point total up here in the upper right.
 
-## How do I get to the Teach dashboard?
+### How do I get to the Teach dashboard?
 
 (start: log in and go to http://datacamp.com/home)
 
@@ -24,7 +26,7 @@ permalink: cd-screencasts.html
 - If you click on that, it takes you to the dashboard.
 - You can also just bookmark http://datacamp.com/teach, which will redirect you to the same place.
 
-## How do I view my courses?
+### How do I view my courses?
 
 (start: log in and go to http://datacamp.com/teach)
 
@@ -34,7 +36,7 @@ permalink: cd-screencasts.html
 - You can type in the search box at the top to filter courses (type!)
 - And if you click on the "Edit" box beside a course's name, you can see links for its branches, its build logs, and so on.
 
-## How do I create a new course?
+### How do I create a new course?
 
 (start: log in and go to http://datacamp.com/teach)
 
@@ -48,7 +50,7 @@ permalink: cd-screencasts.html
 - Then click "Create" (click!).
 - As soon as the course and its GitHub repository have been created, the Teach editor will be launched.
 
-## How do I get from the dashboard to my course?
+### How do I get from the dashboard to my course?
 
 (start: log in and go to http://datacamp.com/teach)
 
@@ -60,7 +62,7 @@ permalink: cd-screencasts.html
 - If you click on "View", you'll be taken to the home page for your course (click, pause a moment, then go back).
 - If you click on "Edit", you'll be taken straight into the Teach editor for that course (click!).
 
-## How do I change the settings for my course?
+### How do I change the settings for my course?
 
 (start: launch the Teach editor for a newly-created dummy course)
 
@@ -70,7 +72,7 @@ permalink: cd-screencasts.html
 - If you scroll down, you can also change who has access to your course (scroll down).
 - However, you shouldn't change any of this unless you're absolutely sure you know what you're doing - please ask your Content Developer to do it for you.
 
-## How do I create a new branch?
+### How do I create a new branch?
 
 (start: launch the Teach editor for a newly-created dummy course that already has two branches called "master" and "specs")
 
@@ -80,7 +82,7 @@ permalink: cd-screencasts.html
 - Type a name for the new branch into the dialog, then click "Create" (type and click).
 - Please only use letters, digits, and hyphens for branch names.
 
-## How do I edit a course?
+### How do I edit a course?
 
 (start: launch the Teach editor for a newly-created dummy course that has at least two branches)
 
@@ -89,23 +91,7 @@ permalink: cd-screencasts.html
 - The course editor will launch (pause a moment so people can see it)
 - You can then use "Try New Interface" to switch to our new-and-improved interface (click!)
 
-## How do I edit course metadata?
-
-- ?? How do we do this in the new editor ??
-- When the time comes, explain that the title and description will eventually appear on the landing page for the course, so students will see this text
-- When the time comes, tell them that the language has to be written in lower case, but they shouldn't change it: they should ask their CD to do it
-- When the time comes, explain that the "from" field determines which Docker image will be used to build their course: only their CD should change it
-
-## How do I save my changes?
-
-- ?? Show this *after* showing people how to edit course metadata (which means after we figure out how to do that in the new interface) ??
-- Tell them *not* to press "sync" while they are editing, since that will bring in any changes made independently in their GitHub repository
-
-## How do I synchronize with changes made in a course's GitHub repository?
-
-- ?? Show this *after* showing people how to edit course metadata (which means after we figure out how to do that in the new interface) ??
-
-## How do I create a new chapter?
+### How do I create a new chapter?
 
 (start: get into new-look course editor for a dummy course)
 
@@ -114,37 +100,11 @@ permalink: cd-screencasts.html
 - Click "Create Chapter" (click!)
 - Your new chapter will show up in the pane on the left (wiggle mouse to highlight)
 
-## How do I edit chapter metadata?
+---
 
-- ?? Show this *after* we figure out how to do it in the new-look editor ??
+## Doable
 
-## How do I preview a chapter?
-
-(start: get into the editor for a dummy course)
-
-- Click on the "Preview" button in the bottom right (wiggle mouse, then click)
-- A new tab will open to display a preview of the current chapter
-
-## How do I add a Pure Multiple Choice exercise?
-
-(start: get into the editor for a dummy course)
-
-- A "Pure Multiple Choice" exercise asks the learner to pick an option without writing or running any code
-- To create one, click on "Add Exercise" (wiggle mouse then click)
-- Select "Pure Multiple Choice" (click)
-- Fill in the "Assignment" section that sets the background for the exercise and asks the question (type)
-- Fill in the "Hint" section (type)
-- Fill in the "Possible Answers" with a point-form list of three or four options, using a dash to start each one (type)
-- Put square brackets around the correct answer (wiggle mouse to highlight)
-- Fill in the "Feedbacks" section with a corresponding point-form list (type)
-- Click the "Save" button at the bottom (wiggle mouse, then click)
-- Click on "Preview" at the bottom to see how your exercise will appear (click!)
-
-## How can I allow several correct responses to a multiple choice exercise?
-
-?? Fill this in once we have an answer ??
-
-## How do I add a Normal exercise?
+### How do I add a Normal exercise?
 
 (start: get into the editor for a course that has an exercise in its first chapter)
 
@@ -162,7 +122,7 @@ permalink: cd-screencasts.html
 - Your Content Developer will write the Submission Correctness Test code to check the user's answer, so leave this blank (wiggle mouse)
 - Click the "Save" button at the bottom (wiggle mouse, then click)
 
-## How can I preview a Normal exercise?
+### How can I preview a Normal exercise?
 
 (start: get into the editor for the Pure MCQ just created)
 
@@ -174,7 +134,7 @@ permalink: cd-screencasts.html
 - If you go back to the editing tab, you'll see that the "Preview" button is highlighted (wiggle mouse)
 - If you close the Preview tab, the highlighting goes away (click!)
 
-## What else do I need to know about Normal exercises?
+### What else do I need to know about Normal exercises?
 
 (start: get into the editor for a course that displays the Normal exercise created above)
 
@@ -184,7 +144,7 @@ permalink: cd-screencasts.html
 - Finally, comments have to be identical in both the "Solution Code" and the "Sample Code" (scroll up and down to show)
 - And those comments are not typical code comments: they are an abbreviated version of the exercise instructions (highlight to show)
 
-## How do I add a Multiple Choice exercise?
+### How do I add a Multiple Choice exercise?
 
 (start: get into the editor for a course that has an exercise in its first chapter)
 
@@ -198,26 +158,71 @@ permalink: cd-screencasts.html
 - Your Content Developer will show you how to fill in the Submission Correctness Test code to check the user's answer
 - Click the "Save" button at the bottom (wiggle mouse, then click)
 
-## How do I add a dataset to a course?
+---
 
-- ?? Show this *after* it's added to the new-look editor ??
+## Pending changes to editor
 
-## How do I add an image to a course?
+### How do I edit course metadata?
 
-- ?? Show this *after* it's added to the new-look editor ??
+- **How do we do this in the new editor?**
+- When the time comes, explain that the title and description will eventually appear on the landing page for the course, so students will see this text
+- When the time comes, tell them that the language has to be written in lower case, but they shouldn't change it: they should ask their CD to do it
+- When the time comes, explain that the "from" field determines which Docker image will be used to build their course: only their CD should change it
 
-## How do I create a new slide?
+### How do I save my changes?
 
-- ?? Show this *after* it's added to the new-look editor ??
+- **Show this after showing people how to edit course metadata (which means after we figure out how to do that in the new interface)?**
+- Tell them *not* to press "sync" while they are editing, since that will bring in any changes made independently in their GitHub repository
 
-## How do I add an image to a slide?
+### How do I synchronize with changes made in a course's GitHub repository?
 
-- ?? Show this *after* it's added to the new-look editor ??
+- **Show this after showing people how to edit course metadata (which means after we figure out how to do that in the new interface)?**
 
-## How do I get from the editor back to the course page?
+### How do I edit chapter metadata?
 
-- ?? Figure this out ??
+- **Show this after we figure out how to do it in the new-look editor?**
 
-## How do I view the status of the course build?
+### How do I add a Pure Multiple Choice exercise?
 
-- ?? Show this *after* we show how to get from the editor back to the course page ??
+**Is there a bug in the editor? Choosing Pure MCQ seems to create a regular MCQ.**
+
+(start: get into the editor for a dummy course)
+
+- A "Pure Multiple Choice" exercise asks the learner to pick an option without writing or running any code
+- To create one, click on "Add Exercise" (wiggle mouse then click)
+- Select "Pure Multiple Choice" (click)
+- Fill in the "Assignment" section that sets the background for the exercise and asks the question (type)
+- Fill in the "Hint" section (type)
+- Fill in the "Possible Answers" with a point-form list of three or four options, using a dash to start each one (type)
+- Put square brackets around the correct answer (wiggle mouse to highlight)
+- Fill in the "Feedbacks" section with a corresponding point-form list (type)
+- Click the "Save" button at the bottom (wiggle mouse, then click)
+- Click on "Preview" at the bottom to see how your exercise will appear (click!)
+
+### How can I allow several correct responses to a multiple choice exercise?
+
+- **Fill this in once we have an answer?**
+
+### How do I add a dataset to a course?
+
+- **Show this after it's added to the new-look editor?**
+
+### How do I add an image to a course?
+
+- **Show this after it's added to the new-look editor?**
+
+### How do I create a new slide?
+
+- **Show this after it's added to the new-look editor?**
+
+### How do I add an image to a slide?
+
+- **Show this after it's added to the new-look editor?**
+
+### How do I get from the editor back to the course page?
+
+- **Show this after it has been implemented?**
+
+### How do I view the status of the course build?
+
+- **Show this after we show how to get from the editor back to the course page?**
