@@ -7,7 +7,7 @@
 See <http://authoring.datacamp.com/> for full documentation,
 and <http://github.com/datacamp/instructor-onboarding/> for an executive summary.
 
-1.  Before You Write Your Spec
+1.  Before You Write Your Spec ([screencasts](https://www.youtube.com/playlist?list=PLjgj6kdf_snbkYNV2Q0Xzkv-DH7bedJIr))
     1.  [From Novice to Competent](./novice.html) (09:24)
         *What makes novices special, and how can we design lessons to help them?*
     2.  [Memory and Cognition](./memory.html) (11:51)
