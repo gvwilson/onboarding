@@ -1,10 +1,8 @@
 Hi,
 
-Thanks again for agreeing to build a course for DataCamp.  We are now testing a short tutorial on best practices in course development that we think will help you build your course in less time and with less fuss, and will also be useful with other kinds of presentations and teaching.  The tutorial consists of five screencasts to watch on your own time (each about 10 minutes long), four short exercises, and an hour-long online discussion to tie it all together.
+Thanks again for agreeing to build a course for DataCamp.  We are now offering a short tutorial on best practices in course development that we think will help you build your course in less time and with less fuss, and will also be useful with other kinds of presentations and teaching.  The tutorial consists of five screencasts to watch on your own time, four short exercises, and an hour-long online discussion to tie it all together; the screencasts are at https://www.youtube.com/playlist?list=PLjgj6kdf_snbkYNV2Q0Xzkv-DH7bedJIr, and their total running time is about 45 minutes.
 
-The first discussion session will be the week of DATE - if you'd like to take part, please fill in WHENISGOOD so we can find a slot that fits everyone's schedule. Participation is completely optional, and if you can't make that day, there will be more sessions in the weeks to come.
-
-Since this is a new venture, we'd like to record the first session for internal review. The recording will only be shared with DataCamp staff, and will only be used to help us improve the training; if you'd rather not be recorded for any reason, you are very welcome to opt for one of the later sessions (which won't be recorded).
+The next discussion session will be the week of [DATE] - if you'd like to take part, please fill in [WHENISGOOD] so we can find a slot that fits everyone's schedule. Participation is completely optional, and if you can't make that day, there will be more sessions in the weeks to come.
 
 If you have any questions or suggestions, please get in touch - otherwise, I look forward to seeing you online soon.
 
