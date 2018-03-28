@@ -1,3 +1,5 @@
+---
+---
 # Instructor Onboarding Checklist
 
 - CL: Curriculum Lead
