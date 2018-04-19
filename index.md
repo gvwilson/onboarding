@@ -14,7 +14,7 @@ spec:
 See <http://authoring.datacamp.com/> for full documentation,
 and <http://github.com/datacamp/instructor-onboarding/> for an executive summary.
 
-1.  Before You Write Your Spec ([screencasts](https://www.youtube.com/playlist?list=PLjgj6kdf_snbkYNV2Q0Xzkv-DH7bedJIr))
+1.  Before You Write Your Spec ([playlist](https://www.youtube.com/playlist?list=PLjgj6kdf_snbkYNV2Q0Xzkv-DH7bedJIr))
     1.  [From Novice to Competent]({{page.spec.novice}}) (09:24)
         *What makes novices special, and how can we design lessons to help them?*
     2.  [Memory and Cognition]({{page.spec.memory}}) (11:51)
@@ -27,13 +27,28 @@ and <http://github.com/datacamp/instructor-onboarding/> for an executive summary
         *Describes the different kinds of exercises you can use in DataCamp courses.*
     6.  [Homework]({{page.spec.homework}}) (01:45)
         *Lays out four brief exercises for you to do before the online discussion.*
-2.  How to Use the Course Editor: in progress
-3.  Before You Implement Your Course
+2.  Before You Implement Your Course
     1.  [Building a Course](./course-build.html)
-    2.  [The Course Editor](./course-editor.html)
-    3.  [Course Guidelines](./course-guidelines.html)
-    4.  [Course Handoff](./course-handoff.html)
-    5.  [Course Tips](./course-tips.html)
+    2.  [Course Guidelines](./course-guidelines.html)
+    3.  [Course Handoff](./course-handoff.html)
+    4.  [Course Tips](./course-tips.html)
+3.  How to Use the Course Editor ([playlist](https://www.youtube.com/playlist?list=PLjgj6kdf_snbe_0R4_WcFjytdhMpv6TJu))
+    1.  [Logging in and getting to the teach editor](https://www.youtube.com/watch?v=GzRksLj2YBI) (0:47)
+    1.  [Overview page](https://www.youtube.com/watch?v=RQO0joS93_8) (0:44)
+    1.  [Creating a new course](https://www.youtube.com/watch?v=UeegW0a6eQ8) (0:55)
+    1.  [Using the edit button on the overview page](https://www.youtube.com/watch?v=z1U75SfGKu0) (0:44)
+    1.  [Course home page](https://www.youtube.com/watch?v=YWvAAlNWL4o) (0:41)
+    1.  [Getting into the course editor](https://www.youtube.com/watch?v=a1WsAVzFQ0M) (0:40)
+    1.  [Switching branches](https://www.youtube.com/watch?v=esFIqohWhC8) (0:39)
+    1.  [Creating a new branch](https://www.youtube.com/watch?v=aD1juzjfshg) (0:41)
+    1.  [Viewing and adding chapters](https://www.youtube.com/watch?v=4NTmdqdT5DY) (0:44)
+    1.  [Uploading datasets, images, and other assets](https://www.youtube.com/watch?v=EVh1fPJYtVM) (0:48)
+    1.  [Exercise creation menu](https://www.youtube.com/watch?v=v2ZcjMRnxSc) (0:45)
+    1.  [Creating a normal coding exercise](https://www.youtube.com/watch?v=5tMwLJTNolI) (1:58)
+    1.  [Creating a multiple choice exercise that includes coding](https://www.youtube.com/watch?v=GbfAawStjio) 1:49)
+    1.  [Creating a pure multiple choice exercise](https://www.youtube.com/watch?v=OmONv8IeJS4) (1:20)
+    1.  [Creating a tabbed (multi-step) exercise](https://www.youtube.com/watch?v=pIiUJGJwNqE) (3:03)
+    1.  [Creating a bullet exercise](https://www.youtube.com/watch?v=XmDLUTX0K1I) (1:43)
 4.  But Wait, I'm Building a Project
     1.  [Creating a Project](./project.html)
     2.  [Project Guidelines](./project-guidelines.html)
