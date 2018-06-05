@@ -43,6 +43,7 @@ and <http://github.com/datacamp/instructor-onboarding/> for an executive summary
     13. [How do I add and preview a multiple choice exercise that includes coding?](https://youtu.be/MxoGQzyzmZA) (1:43)
     14. [How do I view the build for a course?](https://youtu.be/FPEOmNTeFlI) (1:31)
     15. [How do I upload a dataset to use in a course?](https://youtu.be/lDrgK-YBcM4) (0:56)
+    16. [How do I create slides?](https://youtu.be/9I3NePYilng) (2:59)
     16. [How do I create slides that include images?](https://youtu.be/8k_igovXBCg) (2:20)
 4.  How to Use the Course Editor (new wave edition) ([playlist](https://www.youtube.com/playlist?list=PLjgj6kdf_snbe_0R4_WcFjytdhMpv6TJu))
     <br/>
