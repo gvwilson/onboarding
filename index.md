@@ -25,7 +25,8 @@ and <http://github.com/datacamp/instructor-onboarding/> for an executive summary
     2.  [Course Guidelines](./course-guidelines.html)
     3.  [Course Handoff](./course-handoff.html)
     4.  [Course Tips](./course-tips.html)
-3.  How to Use the Course Editor (vinyl edition) ([playlist](https://www.youtube.com/playlist?list=PLVhJaeRPjSX9GdSb-A_g-SnE4KcKRo2dg))
+3.  [Overview of the editor](https://www.youtube.com/watch?v=kCaVATKNubA) (classic edition)
+4.  How to Use the Course Editor (vinyl edition) ([playlist](https://www.youtube.com/playlist?list=PLVhJaeRPjSX9GdSb-A_g-SnE4KcKRo2dg))
     <br/>
     May 2018: Please use this editor as we iron out the last few features in the new one.
     1.  [How do I log in to the course dashboard?](https://youtu.be/2JZ8lJ6H1ZU) (0:44)
@@ -45,7 +46,7 @@ and <http://github.com/datacamp/instructor-onboarding/> for an executive summary
     15. [How do I upload a dataset to use in a course?](https://youtu.be/lDrgK-YBcM4) (0:56)
     16. [How do I create slides?](https://youtu.be/9I3NePYilng) (2:59)
     16. [How do I create slides that include images?](https://youtu.be/8k_igovXBCg) (2:20)
-4.  How to Use the Course Editor (new wave edition) ([playlist](https://www.youtube.com/playlist?list=PLjgj6kdf_snbe_0R4_WcFjytdhMpv6TJu))
+5.  How to Use the Course Editor (new wave edition) ([playlist](https://www.youtube.com/playlist?list=PLjgj6kdf_snbe_0R4_WcFjytdhMpv6TJu))
     <br/>
     May 2018: We are still adding features to the new editor and stabilizing those that are there, so please keep using the classic editor above for now.
     1.  [Logging in and getting to the teach editor](https://www.youtube.com/watch?v=GzRksLj2YBI) (0:47)
@@ -64,10 +65,10 @@ and <http://github.com/datacamp/instructor-onboarding/> for an executive summary
     1.  [Creating a pure multiple choice exercise](https://www.youtube.com/watch?v=OmONv8IeJS4) (1:20)
     1.  [Creating a tabbed (multi-step) exercise](https://www.youtube.com/watch?v=pIiUJGJwNqE) (3:03)
     1.  [Creating a bullet exercise](https://www.youtube.com/watch?v=XmDLUTX0K1I) (1:43)
-5.  But Wait, I'm Building a Project
+6.  But Wait, I'm Building a Project
     1.  [Creating a Project](./project.html)
     2.  [Project Guidelines](./project-guidelines.html)
-6.  Supporting Documents
+7.  Supporting Documents
     1.  [Design of this Material](./design.html)
     2.  [License](./license.html)
     3.  [Contributing](./contributing.html)
